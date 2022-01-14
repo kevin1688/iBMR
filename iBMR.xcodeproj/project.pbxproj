@@ -11,14 +11,18 @@
 		66B5AFB927911D0000D9ADE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B5AFB827911D0000D9ADE0 /* ContentView.swift */; };
 		66B5AFBB27911D0100D9ADE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B5AFBA27911D0100D9ADE0 /* Assets.xcassets */; };
 		66B5AFBE27911D0100D9ADE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B5AFBD27911D0100D9ADE0 /* Preview Assets.xcassets */; };
+		B68DE005E1FD5EC0C114F6B1 /* Pods_iBMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AC080D1F6A33333834051 /* Pods_iBMR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A317F4A09939A604DBB88C1 /* Pods-iBMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBMR.release.xcconfig"; path = "Target Support Files/Pods-iBMR/Pods-iBMR.release.xcconfig"; sourceTree = "<group>"; };
+		4E6E59E0D0424488A5493E81 /* Pods-iBMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBMR.debug.xcconfig"; path = "Target Support Files/Pods-iBMR/Pods-iBMR.debug.xcconfig"; sourceTree = "<group>"; };
 		66B5AFB327911D0000D9ADE0 /* iBMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B5AFB627911D0000D9ADE0 /* iBMRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBMRApp.swift; sourceTree = "<group>"; };
 		66B5AFB827911D0000D9ADE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66B5AFBA27911D0100D9ADE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66B5AFBD27911D0100D9ADE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		836AC080D1F6A33333834051 /* Pods_iBMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68DE005E1FD5EC0C114F6B1 /* Pods_iBMR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047ECC4AC8114D1DC6089C65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E6E59E0D0424488A5493E81 /* Pods-iBMR.debug.xcconfig */,
+				3A317F4A09939A604DBB88C1 /* Pods-iBMR.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		07260FCB5D82350A993A7B30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836AC080D1F6A33333834051 /* Pods_iBMR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66B5AFAA27911D0000D9ADE0 = {
 			isa = PBXGroup;
 			children = (
 				66B5AFB527911D0000D9ADE0 /* iBMR */,
 				66B5AFB427911D0000D9ADE0 /* Products */,
+				047ECC4AC8114D1DC6089C65 /* Pods */,
+				07260FCB5D82350A993A7B30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66B5AFC127911D0100D9ADE0 /* Build configuration list for PBXNativeTarget "iBMR" */;
 			buildPhases = (
+				31C595BBE9F0F46C95C97400 /* [CP] Check Pods Manifest.lock */,
 				66B5AFAF27911D0000D9ADE0 /* Sources */,
 				66B5AFB027911D0000D9ADE0 /* Frameworks */,
 				66B5AFB127911D0000D9ADE0 /* Resources */,
+				B464CCF9E1352073317E5EB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31C595BBE9F0F46C95C97400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iBMR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B464CCF9E1352073317E5EB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBMR/Pods-iBMR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBMR/Pods-iBMR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iBMR/Pods-iBMR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66B5AFAF27911D0000D9ADE0 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		66B5AFC227911D0100D9ADE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6E59E0D0424488A5493E81 /* Pods-iBMR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		66B5AFC327911D0100D9ADE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A317F4A09939A604DBB88C1 /* Pods-iBMR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
