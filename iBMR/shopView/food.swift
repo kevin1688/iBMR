@@ -67,14 +67,13 @@ class ShoppList:ObservableObject{
 class Foods:ObservableObject{
     @Published var shops = [shop]()
     init (){
-    shops = [
-        shop(title:"麥當勞", address: "埔里國中旁", menu: [
-            product(name: "漢堡", cald: "15"),
-            product(name: "漢堡", cald: "15"),
-        ]),
-        shop(title:"7-11", address: "埔里國下面", menu: [
-            product(name: "漢堡", cald: "15"),
-    ])
+        shops = [
+            shop(title:"麥當勞", address: "埔里國中旁",img : "19",products:[
+                product(name: "1234"),
+            ]),
+            shop(title:"7-11", address: "埔里國下面",img : "18",products:[
+                product(name: "5678"),
+            ])
         ]
     }
 }
@@ -82,12 +81,13 @@ struct shop : Identifiable,Codable{
     var id = UUID()
     var title :String
     var address :String
-    var menu :[product]
+    var img = ""
+    var products:[product]
 }
-struct product :Identifiable,Codable{
+
+struct product : Identifiable,Codable{
     var id = UUID()
-    var name :String
-    var cald :String
+    var name:String
 }
 
 class MDL : ObservableObject{

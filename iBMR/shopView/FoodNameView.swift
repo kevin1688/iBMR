@@ -47,7 +47,6 @@ struct NameView: View {
                                     Image(item.img)
                                         .resizable()
                                         .frame(width:300, height: 400)
-                                    
                                 }
                             } label: {
                                 HStack{

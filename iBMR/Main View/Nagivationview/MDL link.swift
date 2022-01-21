@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct MDL_link: View {
+    @StateObject var Mydate = Foods()
+    @State var mshop = shop(title: "", address: "", products: [product(name: "")])
+    
     var body: some View {
-        NavigationView{
+        
             ZStack{
             VStack(spacing: 30){
                 HStack(spacing: 30){
-                    NavigationLink {
-                        judge()
+                    NavigationLink() {
+                        Evaluation()
                     } label: {
                         ZStack{
                         Rectangle()
@@ -87,9 +90,7 @@ struct MDL_link: View {
                 .padding(.trailing,200)
                 }
             }
-            
         }
-    }
     }
 }
 struct MDL_link_Previews: PreviewProvider {

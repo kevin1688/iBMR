@@ -9,26 +9,27 @@ import SwiftUI
 
 
 struct Restaurant: View {
-    @ObservedObject var Menues = ShoppList()
+    @ObservedObject var Menues = Foods()
     var body: some View {
-        NavigationView{
+        
+        NavigationView {
             ZStack {
-                Rectangle()
-                    .ignoresSafeArea()
-                .foregroundColor(Color("Main Color"))
-            ScrollView{
-                ForEach(Menues.ShoppName){ lp in
-                            NavigationLink {
-                               ContentView2()
-                            } label: {
-                                shops(name:lp.name)
-                            }.modifier(textMod())
+                    Rectangle()
+                        .ignoresSafeArea()
+                    .foregroundColor(Color("Main Color"))
+                ScrollView{
+                    ForEach( Menues.shops){ lp in
+                                NavigationLink {
+                                    MDL_link(mshop:lp)
+                                } label: {
+                                    shops(name:lp.title)
+                                }.modifier(textMod())
+                            }
                         }
-                    }
-                }
             }
+        }
     }
-    @ViewBuilder func FoodName() -> some View{
+   /* @ViewBuilder func FoodName() -> some View{
         VStack{
             ForEach(Menues.ShoppName){ vn in
                 VStack{
@@ -38,7 +39,7 @@ struct Restaurant: View {
                 
             }
         }
-    }
+    }*/
 }
 
 struct Restaurant_Previews: PreviewProvider {
