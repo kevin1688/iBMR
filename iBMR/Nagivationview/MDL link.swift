@@ -11,15 +11,23 @@ struct MDL_link: View {
     var body: some View {
         NavigationView{
             ZStack{
+                Rectangle()
+                    .frame( maxWidth:.infinity,  maxHeight:.infinity)
+                    .foregroundColor(Color("Main Color"))
+                    .ignoresSafeArea()
             VStack(spacing: 30){
                 HStack(spacing: 30){
                     NavigationLink {
                         judge()
                     } label: {
                         ZStack{
+                            Rectangle()
+                                .frame(width:180, height: 180, alignment: .center)
+                                .foregroundColor(.black)
+                                .cornerRadius(20)
                         Rectangle()
                             .frame(width:170, height: 170, alignment: .center)
-                            .foregroundColor(Color("DarkGreen"))
+                            .foregroundColor(Color("Green4"))
                             .cornerRadius(18)
                             Text("去評價")
                                 .font(.title)
@@ -30,9 +38,13 @@ struct MDL_link: View {
                         discount()
                     } label: {
                         ZStack{
+                            Rectangle()
+                                .frame(width:180, height: 180, alignment: .center)
+                                .foregroundColor(.black)
+                                .cornerRadius(20)
                         Rectangle()
                             .frame(width:170, height: 170, alignment: .center)
-                            .foregroundColor(Color("DarkGreen"))
+                            .foregroundColor(Color("Green4"))
                          .cornerRadius(18)
                         Text("優惠活動")
                             .font(.title)
@@ -47,9 +59,13 @@ struct MDL_link: View {
                         allJudge()
                     } label: {
                         ZStack{
+                            Rectangle()
+                                .frame(width:180, height: 180, alignment: .center)
+                                .foregroundColor(.black)
+                                .cornerRadius(20)
                         Rectangle()
                             .frame(width:170, height: 170, alignment: .center)
-                            .foregroundColor(Color("DarkGreen"))
+                            .foregroundColor(Color("Green4"))
                             .cornerRadius(18)
                             Text("看評價")
                                 .font(.title)
@@ -60,9 +76,13 @@ struct MDL_link: View {
                         allJudge()
                     } label: {
                         ZStack{
+                            Rectangle()
+                                .frame(width:180, height: 180, alignment: .center)
+                                .foregroundColor(.black)
+                                .cornerRadius(20)
                         Rectangle()
                             .frame(width:170, height: 170, alignment: .center)
-                            .foregroundColor(Color("DarkGreen"))
+                            .foregroundColor(Color("Green4"))
                             .cornerRadius(18)
                             Text("菜單")
                                 .font(.title)
@@ -75,9 +95,13 @@ struct MDL_link: View {
                     allJudge()
                 } label: {
                     ZStack{
+                        Rectangle()
+                            .frame(width:180, height: 180, alignment: .center)
+                            .foregroundColor(.black)
+                            .cornerRadius(20)
                     Rectangle()
                         .frame(width:170, height: 170, alignment: .center)
-                        .foregroundColor(Color("DarkGreen"))
+                        .foregroundColor(Color("Green4"))
                         .cornerRadius(18)
                         Text("店家資料")
                             .font(.title)

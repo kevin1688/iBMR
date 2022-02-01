@@ -46,7 +46,7 @@ struct FoodMainView: View {
                     }
                     Spacer()
                     NavigationLink {
-                        TDEE()
+                        TDEE1()
                     } label: {
                         ZStack{
                             Rectangle()

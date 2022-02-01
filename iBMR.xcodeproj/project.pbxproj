@@ -43,9 +43,19 @@
 		DA1ADB72279A4A4800D6F931 /* Roy main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5E279A4A4800D6F931 /* Roy main.swift */; };
 		DA1ADB73279A4A4800D6F931 /* SignView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5F279A4A4800D6F931 /* SignView2.swift */; };
 		DA1ADB74279A4A4800D6F931 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB60279A4A4800D6F931 /* TempView.swift */; };
-		DA1ADB75279A4A4800D6F931 /* TDEE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB61279A4A4800D6F931 /* TDEE.swift */; };
 		DA1ADB76279A4A4800D6F931 /* TabView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB62279A4A4800D6F931 /* TabView2.swift */; };
 		DA1ADB78279A4BA600D6F931 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB77279A4BA600D6F931 /* AuthenticationViewModel.swift */; };
+		E25EC58027A01CBC008F90AE /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC57C27A01CBC008F90AE /* CaloriesView.swift */; };
+		E25EC58127A01CBC008F90AE /* Comment View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC57D27A01CBC008F90AE /* Comment View.swift */; };
+		E25EC58227A01CBC008F90AE /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC57E27A01CBC008F90AE /* BMIView.swift */; };
+		E25EC58327A01CBC008F90AE /* Lose Weight View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC57F27A01CBC008F90AE /* Lose Weight View.swift */; };
+		E25EC58727A01D06008F90AE /* module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC58527A01D06008F90AE /* module.swift */; };
+		E25EC58827A01D06008F90AE /* BMR formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC58627A01D06008F90AE /* BMR formula.swift */; };
+		E25EC59027A01D8D008F90AE /* TDEE View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC58F27A01D8D008F90AE /* TDEE View.swift */; };
+		E25EC59227A01DA3008F90AE /* BMR Boy View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC59127A01DA3008F90AE /* BMR Boy View.swift */; };
+		E25EC59427A01DAB008F90AE /* BMR Girl View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25EC59327A01DAA008F90AE /* BMR Girl View.swift */; };
+		E278CB1A27A67C4100D0B9E8 /* About store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278CB1927A67C4100D0B9E8 /* About store.swift */; };
+		E278CB1C27A67CD900D0B9E8 /* TDEE1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278CB1B27A67CD900D0B9E8 /* TDEE1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,9 +98,19 @@
 		DA1ADB5E279A4A4800D6F931 /* Roy main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Roy main.swift"; sourceTree = "<group>"; };
 		DA1ADB5F279A4A4800D6F931 /* SignView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView2.swift; sourceTree = "<group>"; };
 		DA1ADB60279A4A4800D6F931 /* TempView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
-		DA1ADB61279A4A4800D6F931 /* TDEE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDEE.swift; sourceTree = "<group>"; };
 		DA1ADB62279A4A4800D6F931 /* TabView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView2.swift; sourceTree = "<group>"; };
 		DA1ADB77279A4BA600D6F931 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		E25EC57C27A01CBC008F90AE /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
+		E25EC57D27A01CBC008F90AE /* Comment View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comment View.swift"; sourceTree = "<group>"; };
+		E25EC57E27A01CBC008F90AE /* BMIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
+		E25EC57F27A01CBC008F90AE /* Lose Weight View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lose Weight View.swift"; sourceTree = "<group>"; };
+		E25EC58527A01D06008F90AE /* module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = module.swift; sourceTree = "<group>"; };
+		E25EC58627A01D06008F90AE /* BMR formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMR formula.swift"; sourceTree = "<group>"; };
+		E25EC58F27A01D8D008F90AE /* TDEE View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TDEE View.swift"; sourceTree = "<group>"; };
+		E25EC59127A01DA3008F90AE /* BMR Boy View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMR Boy View.swift"; sourceTree = "<group>"; };
+		E25EC59327A01DAA008F90AE /* BMR Girl View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMR Girl View.swift"; sourceTree = "<group>"; };
+		E278CB1927A67C4100D0B9E8 /* About store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "About store.swift"; sourceTree = "<group>"; };
+		E278CB1B27A67CD900D0B9E8 /* TDEE1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDEE1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +163,10 @@
 		66B5AFB527911D0000D9ADE0 /* iBMR */ = {
 			isa = PBXGroup;
 			children = (
+				E25EC58E27A01D6D008F90AE /* file made */,
+				E25EC58427A01D05008F90AE /* Module */,
+				E25EC57B27A01CBC008F90AE /* Add */,
 				DA12AC2C279A500700D22AF6 /* Nagivationview */,
-				DA1ADB4B279A4A4800D6F931 /* knowledge */,
 				DA1ADB59279A4A4800D6F931 /* Main View */,
 				DA1ADB4C279A4A4800D6F931 /* Model */,
 				DA1ADB42279A4A3400D6F931 /* shopView */,
@@ -185,6 +207,7 @@
 				DA1ADB36279A498700D6F931 /* Judge.swift */,
 				DA1ADB35279A498700D6F931 /* judgeData.swift */,
 				DA1ADB33279A498700D6F931 /* star.swift */,
+				E278CB1927A67C4100D0B9E8 /* About store.swift */,
 			);
 			path = DJS;
 			sourceTree = "<group>";
@@ -198,13 +221,6 @@
 				DA1ADB46279A4A3400D6F931 /* Restaurant.swift */,
 			);
 			path = shopView;
-			sourceTree = "<group>";
-		};
-		DA1ADB4B279A4A4800D6F931 /* knowledge */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = knowledge;
 			sourceTree = "<group>";
 		};
 		DA1ADB4C279A4A4800D6F931 /* Model */ = {
@@ -237,16 +253,46 @@
 			isa = PBXGroup;
 			children = (
 				DA1ADB5A279A4A4800D6F931 /* FoodMainView.swift */,
+				E278CB1B27A67CD900D0B9E8 /* TDEE1.swift */,
 				DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */,
 				DA1ADB5C279A4A4800D6F931 /* MainView2.swift */,
 				DA1ADB5D279A4A4800D6F931 /* BMI.swift */,
 				DA1ADB5E279A4A4800D6F931 /* Roy main.swift */,
 				DA1ADB5F279A4A4800D6F931 /* SignView2.swift */,
 				DA1ADB60279A4A4800D6F931 /* TempView.swift */,
-				DA1ADB61279A4A4800D6F931 /* TDEE.swift */,
 				DA1ADB62279A4A4800D6F931 /* TabView2.swift */,
 			);
 			path = "Main View";
+			sourceTree = "<group>";
+		};
+		E25EC57B27A01CBC008F90AE /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E25EC57C27A01CBC008F90AE /* CaloriesView.swift */,
+				E25EC57D27A01CBC008F90AE /* Comment View.swift */,
+				E25EC57E27A01CBC008F90AE /* BMIView.swift */,
+				E25EC57F27A01CBC008F90AE /* Lose Weight View.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		E25EC58427A01D05008F90AE /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E25EC58527A01D06008F90AE /* module.swift */,
+				E25EC58627A01D06008F90AE /* BMR formula.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E25EC58E27A01D6D008F90AE /* file made */ = {
+			isa = PBXGroup;
+			children = (
+				E25EC58F27A01D8D008F90AE /* TDEE View.swift */,
+				E25EC59327A01DAA008F90AE /* BMR Girl View.swift */,
+				E25EC59127A01DA3008F90AE /* BMR Boy View.swift */,
+			);
+			path = "file made";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E278CB1A27A67C4100D0B9E8 /* About store.swift in Sources */,
 				DA1ADB66279A4A4800D6F931 /* Mod.swift in Sources */,
 				DA1ADB6C279A4A4800D6F931 /* MainView.swift in Sources */,
 				DA1ADB78279A4BA600D6F931 /* AuthenticationViewModel.swift in Sources */,
@@ -371,6 +418,8 @@
 				DA1ADB24279A454000D6F931 /* AppDelegate.swift in Sources */,
 				DA1ADB6F279A4A4800D6F931 /* ChangeView.swift in Sources */,
 				DA1ADB6A279A4A4800D6F931 /* SignView.swift in Sources */,
+				E25EC58127A01CBC008F90AE /* Comment View.swift in Sources */,
+				E25EC58727A01D06008F90AE /* module.swift in Sources */,
 				DA1ADB28279A454C00D6F931 /* DataModel.swift in Sources */,
 				DA1ADB68279A4A4800D6F931 /* ButtonDemo.swift in Sources */,
 				DA1ADB6E279A4A4800D6F931 /* FoodMainView.swift in Sources */,
@@ -379,12 +428,15 @@
 				DA1ADB76279A4A4800D6F931 /* TabView2.swift in Sources */,
 				66B5AFB727911D0000D9ADE0 /* iBMRApp.swift in Sources */,
 				DA1ADB26279A454600D6F931 /* ContentView.swift in Sources */,
-				DA1ADB75279A4A4800D6F931 /* TDEE.swift in Sources */,
 				DA1ADB3A279A498700D6F931 /* discount.swift in Sources */,
+				E25EC58227A01CBC008F90AE /* BMIView.swift in Sources */,
+				E25EC58827A01D06008F90AE /* BMR formula.swift in Sources */,
 				DA12AC2E279A506B00D22AF6 /* MDL link.swift in Sources */,
 				DA1ADB48279A4A3400D6F931 /* FoodNameView.swift in Sources */,
 				DA1ADB3C279A498700D6F931 /* Judge.swift in Sources */,
 				DA1ADB47279A4A3400D6F931 /* ShopDemoView.swift in Sources */,
+				E278CB1C27A67CD900D0B9E8 /* TDEE1.swift in Sources */,
+				E25EC58027A01CBC008F90AE /* CaloriesView.swift in Sources */,
 				DA1ADB3D279A498700D6F931 /* ContentView2.swift in Sources */,
 				DA1ADB49279A4A3400D6F931 /* food.swift in Sources */,
 				DA1ADB70279A4A4800D6F931 /* MainView2.swift in Sources */,
@@ -392,6 +444,7 @@
 				DA1ADB71279A4A4800D6F931 /* BMI.swift in Sources */,
 				DA1ADB4A279A4A3400D6F931 /* Restaurant.swift in Sources */,
 				DA1ADB73279A4A4800D6F931 /* SignView2.swift in Sources */,
+				E25EC59027A01D8D008F90AE /* TDEE View.swift in Sources */,
 				DA1ADB65279A4A4800D6F931 /* NavigationDemo.swift in Sources */,
 				DA1ADB74279A4A4800D6F931 /* TempView.swift in Sources */,
 				DA1ADB63279A4A4800D6F931 /* TalkModel.swift in Sources */,
@@ -399,6 +452,9 @@
 				DA1ADB3B279A498700D6F931 /* judgeData.swift in Sources */,
 				DA1ADB39279A498700D6F931 /* star.swift in Sources */,
 				DA1ADB3E279A498800D6F931 /* allJudge.swift in Sources */,
+				E25EC59427A01DAB008F90AE /* BMR Girl View.swift in Sources */,
+				E25EC58327A01CBC008F90AE /* Lose Weight View.swift in Sources */,
+				E25EC59227A01DA3008F90AE /* BMR Boy View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
