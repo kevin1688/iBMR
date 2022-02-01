@@ -32,7 +32,7 @@ struct SignView2: View {
                     Rectangle()
                         .frame(width:300, height:80)
                         .foregroundColor(Color("CentirGreen"))
-                Text("脂肪戰爭")
+                Text("BMR管理系統開發")
                     .modifier(textMod())
                 }
                 Image("lion")

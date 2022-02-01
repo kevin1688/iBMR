@@ -9,15 +9,14 @@ import SwiftUI
 
 struct MDL_link: View {
     @StateObject var Mydate = Foods()
-    @State var mshop = shop(title: "", address: "", products: [product(name: "")])
+    @State var mshop = shop(title: "", address: "", products: [product(name: "",cal: "")])
     
     var body: some View {
-        
             ZStack{
             VStack(spacing: 30){
                 HStack(spacing: 30){
                     NavigationLink() {
-                        Evaluation()
+                        Evaluation(title:mshop.title, img:mshop.img)
                     } label: {
                         ZStack{
                         Rectangle()
@@ -75,7 +74,7 @@ struct MDL_link: View {
                 }
                 HStack{
                 NavigationLink {
-                    allJudge()
+                    About_store()
                 } label: {
                     ZStack{
                     Rectangle()

@@ -15,30 +15,7 @@ struct foodname : Identifiable,Codable{
     var numbers : Int
 }
 
-class FoodList:ObservableObject{
-    
-    @Published var FoodName:[foodname] = [foodname]()
-    
-    init(){
-        foodshow()
-    }
-    func foodshow() {
-        FoodName = [
-            foodname(name:"蛋餅",prise: "20",img:"egg",numbers: 0),
-            foodname(name: "吐司",prise: "20",img:"toast",numbers: 0),
-            foodname(name:"捲餅",prise: "20",img:"1",numbers: 0),
-            foodname(name:"漢堡",prise: "20",img:"3",numbers: 0),
-            foodname(name:"義大利麵",prise: "20",img:"2",numbers: 0),
-            foodname(name:"鍋貼",prise: "20",img:"4",numbers: 0),
-            foodname(name:"奶茶",prise: "20",img:"5",numbers: 0),
-            foodname(name:"紅茶",prise: "20",img:"6",numbers: 0)
-        ]
-    }
-    func addNumber(){
-        FoodName[0].numbers = FoodName[0].numbers+1
-    }
-    
-}
+
 
 struct shoppname : Identifiable,Codable{
     var id = UUID()
@@ -46,37 +23,35 @@ struct shoppname : Identifiable,Codable{
     var img = ""
 }
 
-class ShoppList:ObservableObject{
-    
-    @Published var ShoppName:[shoppname] = [shoppname]()
-    
-    init(){
-        shoppshow()
-    }
-    func shoppshow() {
-        ShoppName = [
-            shoppname(name:"麥當勞",img : "egg"),
-            shoppname(name:"全家",img : "4"),
-            shoppname(name:"7-11",img:"5"),
-            shoppname(name:"阿寶",img:"6")
-        ]
-    }
-    
-}
-
 class Foods:ObservableObject{
     @Published var shops = [shop]()
     init (){
         shops = [
             shop(title:"麥當勞", address: "埔里國中旁",img : "19",products:[
-                product(name: "1234"),
+                product(name: "1234",cal: "36")
             ]),
             shop(title:"7-11", address: "埔里國下面",img : "18",products:[
-                product(name: "5678"),
+                product(name: "5678",cal: "27")
             ])
         ]
     }
 }
+
+struct FoodName2 : Identifiable,Codable{
+    
+    var id = UUID()
+    var name:String
+    var price :String
+    var price2 : String
+    var other : String
+    var img = ""
+}
+  var FoodNames2 :[FoodName2] = [
+        FoodName2(name:"雙蝦天婦羅堡",price:"單點：144",price2:"199",other:"",img:"15"),
+        FoodName2(name:"炸蝦安格斯黑牛堡",price:"單點：144",price2:"199",other:"",img:"16"),
+        FoodName2(name:"現烤貝果",price:"單點：55",price2:"65",other:"（搭配38元指定飲料）",img:"17"),
+        FoodName2(name:"有氧雙人早餐",price:"",price2:"平均75折",other:"內含兩份主餐、大薯、6塊麥克雞與兩杯38元飲料",img:"18")
+    ]
 struct shop : Identifiable,Codable{
     var id = UUID()
     var title :String
@@ -88,6 +63,7 @@ struct shop : Identifiable,Codable{
 struct product : Identifiable,Codable{
     var id = UUID()
     var name:String
+    var cal :String
 }
 
 class MDL : ObservableObject{
@@ -104,4 +80,8 @@ struct MDLfood : Identifiable,Codable{
 
 
 
-
+struct products:Identifiable,Hashable,Codable {
+    var id = UUID().uuidString
+    var title:String
+    var img:String
+}

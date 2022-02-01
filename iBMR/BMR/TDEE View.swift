@@ -16,7 +16,6 @@ struct TDEE_View: View {
     @State var pointNumber:Double = 0.0
     
     @State var keyNumberString = "0"
-    
     @State var keyNumberString_temp = "0"
     
     var body: some View {

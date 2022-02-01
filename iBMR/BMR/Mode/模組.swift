@@ -13,7 +13,7 @@ struct View_Background :ViewModifier{
         
         content
             .ignoresSafeArea()
-            .foregroundColor(Color("mainColor"))
+            .foregroundColor(Color("Main Color"))
         
     }
 }

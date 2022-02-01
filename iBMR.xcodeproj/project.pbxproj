@@ -24,6 +24,8 @@
 		DA12AC47279A877B00D22AF6 /* BMR計算公式.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12AC45279A877B00D22AF6 /* BMR計算公式.swift */; };
 		DA12AC49279A93EA00D22AF6 /* Evaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12AC48279A93EA00D22AF6 /* Evaluation.swift */; };
 		DA12AC4B279A93F100D22AF6 /* information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12AC4A279A93F100D22AF6 /* information.swift */; };
+		DA12AC4F27A839E900D22AF6 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12AC4E27A839E900D22AF6 /* Sex.swift */; };
+		DA12AC5E27A94BC500D22AF6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA12AC5D27A94BC500D22AF6 /* MenuView.swift */; };
 		DA1ADB24279A454000D6F931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB23279A454000D6F931 /* AppDelegate.swift */; };
 		DA1ADB26279A454600D6F931 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB25279A454600D6F931 /* ContentView.swift */; };
 		DA1ADB28279A454C00D6F931 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB27279A454C00D6F931 /* DataModel.swift */; };
@@ -33,7 +35,6 @@
 		DA1ADB3C279A498700D6F931 /* Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB36279A498700D6F931 /* Judge.swift */; };
 		DA1ADB3D279A498700D6F931 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB37279A498700D6F931 /* ContentView2.swift */; };
 		DA1ADB3E279A498800D6F931 /* allJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB38279A498700D6F931 /* allJudge.swift */; };
-		DA1ADB48279A4A3400D6F931 /* FoodNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB44279A4A3400D6F931 /* FoodNameView.swift */; };
 		DA1ADB49279A4A3400D6F931 /* food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB45279A4A3400D6F931 /* food.swift */; };
 		DA1ADB4A279A4A3400D6F931 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB46279A4A3400D6F931 /* Restaurant.swift */; };
 		DA1ADB63279A4A4800D6F931 /* TalkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB4D279A4A4800D6F931 /* TalkModel.swift */; };
@@ -49,11 +50,11 @@
 		DA1ADB6E279A4A4800D6F931 /* FoodMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5A279A4A4800D6F931 /* FoodMainView.swift */; };
 		DA1ADB6F279A4A4800D6F931 /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */; };
 		DA1ADB70279A4A4800D6F931 /* MainView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5C279A4A4800D6F931 /* MainView2.swift */; };
-		DA1ADB72279A4A4800D6F931 /* Roy main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5E279A4A4800D6F931 /* Roy main.swift */; };
 		DA1ADB73279A4A4800D6F931 /* SignView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB5F279A4A4800D6F931 /* SignView2.swift */; };
 		DA1ADB74279A4A4800D6F931 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB60279A4A4800D6F931 /* TempView.swift */; };
 		DA1ADB76279A4A4800D6F931 /* TabView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB62279A4A4800D6F931 /* TabView2.swift */; };
 		DA1ADB78279A4BA600D6F931 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADB77279A4BA600D6F931 /* AuthenticationViewModel.swift */; };
+		DA5AE27B27A95859004BA8EB /* About store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE27A27A95859004BA8EB /* About store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		DA12AC45279A877B00D22AF6 /* BMR計算公式.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMR計算公式.swift"; sourceTree = "<group>"; };
 		DA12AC48279A93EA00D22AF6 /* Evaluation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evaluation.swift; sourceTree = "<group>"; };
 		DA12AC4A279A93F100D22AF6 /* information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = information.swift; sourceTree = "<group>"; };
+		DA12AC4E27A839E900D22AF6 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		DA12AC5D27A94BC500D22AF6 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DA1ADB23279A454000D6F931 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA1ADB25279A454600D6F931 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA1ADB27279A454C00D6F931 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -86,7 +89,6 @@
 		DA1ADB36279A498700D6F931 /* Judge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Judge.swift; sourceTree = "<group>"; };
 		DA1ADB37279A498700D6F931 /* ContentView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		DA1ADB38279A498700D6F931 /* allJudge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allJudge.swift; sourceTree = "<group>"; };
-		DA1ADB44279A4A3400D6F931 /* FoodNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodNameView.swift; sourceTree = "<group>"; };
 		DA1ADB45279A4A3400D6F931 /* food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = food.swift; sourceTree = "<group>"; };
 		DA1ADB46279A4A3400D6F931 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		DA1ADB4D279A4A4800D6F931 /* TalkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkModel.swift; sourceTree = "<group>"; };
@@ -102,11 +104,11 @@
 		DA1ADB5A279A4A4800D6F931 /* FoodMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMainView.swift; sourceTree = "<group>"; };
 		DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
 		DA1ADB5C279A4A4800D6F931 /* MainView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView2.swift; sourceTree = "<group>"; };
-		DA1ADB5E279A4A4800D6F931 /* Roy main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Roy main.swift"; sourceTree = "<group>"; };
 		DA1ADB5F279A4A4800D6F931 /* SignView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView2.swift; sourceTree = "<group>"; };
 		DA1ADB60279A4A4800D6F931 /* TempView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		DA1ADB62279A4A4800D6F931 /* TabView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView2.swift; sourceTree = "<group>"; };
 		DA1ADB77279A4BA600D6F931 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		DA5AE27A27A95859004BA8EB /* About store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "About store.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			children = (
 				DA12AC43279A877B00D22AF6 /* Mode */,
 				DA12AC34279A876600D22AF6 /* BMR Girl View.swift */,
+				DA12AC4E27A839E900D22AF6 /* Sex.swift */,
 				DA12AC35279A876600D22AF6 /* TDEE View.swift */,
 				DA12AC36279A876600D22AF6 /* BMR Boy View.swift */,
 			);
@@ -235,6 +238,7 @@
 				DA1ADB36279A498700D6F931 /* Judge.swift */,
 				DA1ADB35279A498700D6F931 /* judgeData.swift */,
 				DA1ADB33279A498700D6F931 /* star.swift */,
+				DA5AE27A27A95859004BA8EB /* About store.swift */,
 			);
 			path = DJS;
 			sourceTree = "<group>";
@@ -242,7 +246,7 @@
 		DA1ADB42279A4A3400D6F931 /* shopView */ = {
 			isa = PBXGroup;
 			children = (
-				DA1ADB44279A4A3400D6F931 /* FoodNameView.swift */,
+				DA12AC5D27A94BC500D22AF6 /* MenuView.swift */,
 				DA1ADB45279A4A3400D6F931 /* food.swift */,
 				DA1ADB46279A4A3400D6F931 /* Restaurant.swift */,
 			);
@@ -289,7 +293,6 @@
 				DA12AC2C279A500700D22AF6 /* Nagivationview */,
 				DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */,
 				DA1ADB5C279A4A4800D6F931 /* MainView2.swift */,
-				DA1ADB5E279A4A4800D6F931 /* Roy main.swift */,
 				DA1ADB5F279A4A4800D6F931 /* SignView2.swift */,
 				DA1ADB60279A4A4800D6F931 /* TempView.swift */,
 				DA1ADB62279A4A4800D6F931 /* TabView2.swift */,
@@ -422,8 +425,10 @@
 				DA1ADB6A279A4A4800D6F931 /* SignView.swift in Sources */,
 				DA1ADB28279A454C00D6F931 /* DataModel.swift in Sources */,
 				DA12AC49279A93EA00D22AF6 /* Evaluation.swift in Sources */,
+				DA5AE27B27A95859004BA8EB /* About store.swift in Sources */,
 				DA12AC38279A876700D22AF6 /* TDEE View.swift in Sources */,
 				DA12AC3F279A877200D22AF6 /* CaloriesView.swift in Sources */,
+				DA12AC4F27A839E900D22AF6 /* Sex.swift in Sources */,
 				DA1ADB68279A4A4800D6F931 /* ButtonDemo.swift in Sources */,
 				DA12AC40279A877200D22AF6 /* Comment View.swift in Sources */,
 				DA1ADB6E279A4A4800D6F931 /* FoodMainView.swift in Sources */,
@@ -434,12 +439,12 @@
 				DA1ADB26279A454600D6F931 /* ContentView.swift in Sources */,
 				DA1ADB3A279A498700D6F931 /* discount.swift in Sources */,
 				DA12AC2E279A506B00D22AF6 /* MDL link.swift in Sources */,
-				DA1ADB48279A4A3400D6F931 /* FoodNameView.swift in Sources */,
 				DA1ADB3C279A498700D6F931 /* Judge.swift in Sources */,
 				DA1ADB3D279A498700D6F931 /* ContentView2.swift in Sources */,
 				DA12AC42279A877200D22AF6 /* Lose Weight View.swift in Sources */,
 				DA12AC39279A876700D22AF6 /* BMR Boy View.swift in Sources */,
 				DA1ADB49279A4A3400D6F931 /* food.swift in Sources */,
+				DA12AC5E27A94BC500D22AF6 /* MenuView.swift in Sources */,
 				DA1ADB70279A4A4800D6F931 /* MainView2.swift in Sources */,
 				DA12AC41279A877200D22AF6 /* BMIView.swift in Sources */,
 				DA12AC37279A876700D22AF6 /* BMR Girl View.swift in Sources */,
@@ -450,7 +455,6 @@
 				DA1ADB65279A4A4800D6F931 /* NavigationDemo.swift in Sources */,
 				DA1ADB74279A4A4800D6F931 /* TempView.swift in Sources */,
 				DA1ADB63279A4A4800D6F931 /* TalkModel.swift in Sources */,
-				DA1ADB72279A4A4800D6F931 /* Roy main.swift in Sources */,
 				DA1ADB3B279A498700D6F931 /* judgeData.swift in Sources */,
 				DA1ADB39279A498700D6F931 /* star.swift in Sources */,
 				DA12AC4B279A93F100D22AF6 /* information.swift in Sources */,

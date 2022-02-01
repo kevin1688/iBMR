@@ -35,18 +35,18 @@ struct FoodMainView: View {
                     }
                     Spacer()
                     NavigationLink {
-                        BMI()
+                        Sex()
                     } label: {
                         ZStack{
                             Rectangle()
                                 .modifier(PpMod())
-                            Text("BMI計算")
+                            Text("BMR計算")
                                 .modifier(ReMod())
                         }
                     }
                     Spacer()
                     NavigationLink {
-                        TDEE()
+                        TDEE_View()
                     } label: {
                         ZStack{
                             Rectangle()
@@ -58,7 +58,7 @@ struct FoodMainView: View {
                     Spacer()
                 }
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

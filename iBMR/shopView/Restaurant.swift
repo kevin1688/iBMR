@@ -11,23 +11,33 @@ import SwiftUI
 struct Restaurant: View {
     @ObservedObject var Menues = Foods()
     var body: some View {
-        
         NavigationView {
             ZStack {
                     Rectangle()
                         .ignoresSafeArea()
                     .foregroundColor(Color("Main Color"))
-                ScrollView{
-                    ForEach( Menues.shops){ lp in
-                                NavigationLink {
-                                    MDL_link(mshop:lp)
-                                } label: {
-                                    shops(name:lp.title)
-                                }.modifier(textMod())
-                            }
-                        }
+                VStack {
+                    ZStack{
+                    Rectangle()
+                        .frame(width:.infinity, height: 80)
+                        .foregroundColor(.gray)
+                        Text("餐廳推薦")
+                                .font(.largeTitle)
+
+                    }
+                    ScrollView{
+                        ForEach( Menues.shops){ lp in
+                                    NavigationLink {
+                                        MDL_link(mshop:lp)
+                                    } label: {
+                                        shops(name:lp.title)
+                                    }.modifier(textMod())
+                                }
+                    }
+                }
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
+
     }
    /* @ViewBuilder func FoodName() -> some View{
         VStack{
@@ -55,7 +65,6 @@ struct shops : View{
         Text("\(name)")
             Rectangle()
                 .frame(width:.infinity, height:1, alignment:.center)
-
         }
     }
 }
