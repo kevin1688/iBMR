@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct discount: View {    
+struct discount: View {
+    @State var Menushop = shop(title: "", products: [product(productname: "",cal: "")],combos: [combo(comboname: "", price: "", price2: "", other: "", comboimg: "")],works: [work( phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
     var body: some View {
         
             ZStack{
                 Rectangle()
-                    .frame(width: 420, height: 860, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .ignoresSafeArea()
                     .foregroundColor(Color("Green"))
                 Spacer()
                 Spacer()
@@ -34,17 +35,13 @@ struct discount: View {
                         .font(.title)
                 }
                     ScrollView{
-                        ForEach(FoodNames2){ item in
-                            Foods2(name: item.name, price: item.price,price2: item.price2,other: item.other,img: item.img)
-                            
+                        ForEach(Menushop.combos){ item in
+                            Foods2(name1: item.comboname, price: item.price,price2: item.price2,other: item.other,img2: item.comboimg)
                         }
                     }
                 }
             }
         }
-    }
-    
-
 struct discount_Previews: PreviewProvider {
     static var previews: some View {
         discount()
@@ -53,19 +50,19 @@ struct discount_Previews: PreviewProvider {
 
 struct Foods2 : View{
     
-    @State var name : String
+    @State var name1 : String
     @State var price : String
     @State var price2 : String
     @State var other : String
-    @State var img = ""
+    @State var img2 = ""
     
     var body: some View{
         HStack{
-            Image("\(img)")
+            Image("\(img2)")
                 .resizable()
                 .frame(width: 200, height: 200)
             VStack{
-            Text("[\(name)]")
+            Text("[\(name1)]")
                 .font(.title)
             Text("\(price)")
                 .font(.title)
@@ -77,4 +74,4 @@ struct Foods2 : View{
         }
     }
 }
-
+}

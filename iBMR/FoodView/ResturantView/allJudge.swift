@@ -17,6 +17,7 @@ struct allJudge: View {
         ZStack {
             Rectangle()
                 .foregroundColor(Color("Green"))
+                .ignoresSafeArea()
             VStack {
                 Text("評價總和")
                     .scaleEffect(2)

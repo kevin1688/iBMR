@@ -39,7 +39,7 @@ struct BMIView: View {
                     
                     Rectangle()
                         .frame(width: 290, height: 140)
-                        .foregroundColor(.orange)
+                        .foregroundColor(Color("Green4"))
                     
                     Text("點我了解")
                         .scaleEffect(2)

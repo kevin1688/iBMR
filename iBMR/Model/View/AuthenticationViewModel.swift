@@ -16,7 +16,6 @@ class AuthenticationViewModel: NSObject, ObservableObject {
         case signedIn
         case signedOut
     }
-    
     let auth = Auth.auth()
     
     @Published var state: SignInState = .signedOut

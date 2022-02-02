@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView2: View {
+struct UnderstandView: View {
     var body: some View {
         NavigationView{
         ZStack{
@@ -84,9 +84,9 @@ struct MainView2: View {
     }.edgesIgnoringSafeArea(.all)
 }
 }
-struct MainView2_Previews: PreviewProvider {
+struct UnderstandView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView2()
+        UnderstandView()
     }
 }
 

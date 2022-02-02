@@ -6,12 +6,13 @@
 
 import SwiftUI
 
-struct ButtonView2: View {
+struct BMRTabView: View {
     enum selectionName {
     case MainView
     case Restaurant
     case MainView2
     }
+    
     @State var selectionid = selectionName.Restaurant
     
     var body: some View {
@@ -23,10 +24,9 @@ struct ButtonView2: View {
                 .tabItem{Image(systemName:"star")}
                 .tag(selectionName.Restaurant)
 
-           MainView2()
+            UnderstandView()
                 .tabItem{Image(systemName:"books.vertical.fill")}
                 .tag(selectionName.MainView2)
-
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear{
@@ -34,8 +34,8 @@ struct ButtonView2: View {
         }
 }
 }
-struct ButtonView2_Previews: PreviewProvider {
+struct BMRTabView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView2()
+        BMRTabView()
     }
 }

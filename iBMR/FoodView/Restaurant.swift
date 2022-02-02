@@ -23,10 +23,9 @@ struct Restaurant: View {
                         .foregroundColor(.gray)
                         Text("餐廳推薦")
                                 .font(.largeTitle)
-
                     }
                     ScrollView{
-                        ForEach( Menues.shops){ lp in
+                        ForEach(Menues.shops){ lp in
                                     NavigationLink {
                                         MDL_link(mshop:lp)
                                     } label: {
@@ -35,6 +34,7 @@ struct Restaurant: View {
                                 }
                     }
                 }
+                
             }
         }.edgesIgnoringSafeArea(.all)
 

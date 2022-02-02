@@ -25,7 +25,6 @@ struct NavigationDemo: View {
                             toRec(index: item)
                         } label: {
                             Text("Hello")
-                            
                         }
                     }
                     .toolbar {
