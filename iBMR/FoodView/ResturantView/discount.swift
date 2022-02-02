@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct discount: View {
-    @State var Menushop = shop(title: "", products: [product(productname: "",cal: "")],combos: [combo(comboname: "", price: "", price2: "", other: "", comboimg: "")],works: [work( phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
+    @State var Menushop = shop(title: "", products: [product(productname: "",cal: "",productprice: "",sortname: "")],combos: [combo( comboname: "", price: "", price2: "", other: "", comboimg: "")],works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
+    
     var body: some View {
         
             ZStack{
