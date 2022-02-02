@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct Restaurant: View {
     @ObservedObject var Menues = Foods()
     var body: some View {

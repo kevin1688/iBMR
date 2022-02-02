@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MenuView: View {
     @StateObject var dDate = Foods()
-    @State var Menushop = shop(title: "", products: [product(productname: "",cal: "",productprice: "",sortname: "")],combos: [combo( comboname: "", price: "", price2: "", other: "", comboimg: "")],works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
+    @State var Menushop = shop(title: "", img: "", Sortnames: [Sortname(sortname: "", products: [product(productname:"", cal: "", productprice: "")])], combos: [combo(comboname: "", price: "", price2: "", other: "")], works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
+
     var body: some View {
         ZStack{
             Rectangle()
@@ -22,10 +23,20 @@ struct MenuView: View {
                         Text("價錢")
                         Text("卡路里")
                        
+                       
                     }.font(.title)
-                    ForEach(Menushop.products){ pf in
-                        food3(name:pf.productname, cal: pf.cal, price: pf.productprice, sortname : pf.sortname)
+                    VStack{
+                    ForEach(Menushop.Sortnames){ pf in
+                        Text(pf.sortname)
+                        ForEach(pf.products){ lk in
+                            HStack{
+                                Text("\(lk.productname)")
+                                Text("\(lk.productprice)元")
+                                Text("\(lk.cal)卡")
+                            }
+                        }
                     }
+                    }.font(.title)
                 }
             }
         }
@@ -36,23 +47,3 @@ struct MenuView: View {
         MenuView()
     }
 }
-
-struct food3 : View{
-    @State var name = ""
-    @State var cal = ""
-    @State var price = ""
-    @State var sortname = ""
-    var body: some View{
-        VStack{
-            Text("\(sortname)")
-        HStack{
-            Text("\(name)")
-            Text("\(price)元")
-            Text("\(cal)卡")
-        }
-        }.font(.title)
-
-    }
-}
-
-

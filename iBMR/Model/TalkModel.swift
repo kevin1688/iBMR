@@ -88,7 +88,6 @@ let talks:[talk] = [
     talk(head: "monk", name: "jeff", talk: "還不錯^^", date: Date())
 ]
 
-
 extension Date{
     func dateToString() -> String {
         let dateformat = DateFormatter() //宣告Dateformatter

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Aboutstore: View {
     @State var title = ""
-    @State var WorkShop = shop(title: "", products: [product(productname: "",cal: "",productprice: "",sortname: "")],combos: [combo( comboname: "", price: "", price2: "", other: "", comboimg: "")],works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
+    @State var WorkShop = shop(title: "", img: "", Sortnames: [Sortname(sortname: "", products: [product(productname:"", cal: "", productprice: "")])], combos: [combo(comboname: "", price: "", price2: "", other: "")], works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
     var body: some View {
         ZStack{
         Rectangle()
