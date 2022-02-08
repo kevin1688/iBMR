@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct MDL_link: View {
+    @StateObject var Mydate = Foods()
+    @State var mshop = shop(title: "", img: "", Sortnames: [Sortname(sortname: "", products: [product(productname:"", cal: "", productprice: "")])], combos: [combo(comboname: "", price: "", price2: "", other: "")], works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
     var body: some View {
-        NavigationView{
             ZStack{
                 Rectangle()
-                    .frame( maxWidth:.infinity,  maxHeight:.infinity)
-                    .foregroundColor(Color("Main Color"))
                     .ignoresSafeArea()
+                    .foregroundColor(Color("Main Color"))
             VStack(spacing: 30){
                 HStack(spacing: 30){
-                    NavigationLink {
-                        judge()
+                    NavigationLink() {
+                        Evaluation(title:mshop.title, img:mshop.img)
                     } label: {
                         ZStack{
                             Rectangle()
@@ -35,7 +35,7 @@ struct MDL_link: View {
                         }
                     }
                     NavigationLink {
-                        discount()
+                        MenuView( Menushop: mshop)
                     } label: {
                         ZStack{
                             Rectangle()
@@ -71,9 +71,17 @@ struct MDL_link: View {
                                 .font(.title)
                                 .foregroundColor(.black)
                         }
-                    }
+
+                    } 
                     NavigationLink {
-                        allJudge()
+                        /*VStack{
+                            ForEach(mshop.products){ po in
+                                Text(po.name)
+                                Text(po.cal)
+                            }
+                        }
+                         */
+                        MenuView( Menushop: mshop)
                     } label: {
                         ZStack{
                             Rectangle()
@@ -92,7 +100,7 @@ struct MDL_link: View {
                 }
                 HStack{
                 NavigationLink {
-                    allJudge()
+                    Aboutstore(title:mshop.title, WorkShop: mshop)
                 } label: {
                     ZStack{
                         Rectangle()
@@ -108,16 +116,15 @@ struct MDL_link: View {
                             .foregroundColor(.black)
                     }
                 }
+                }
                 .padding(.trailing,200)
                 }
             }
-            
         }
     }
-    }
-}
 struct MDL_link_Previews: PreviewProvider {
     static var previews: some View {
         MDL_link()
     }
 }
+

@@ -80,3 +80,13 @@ struct ReMod:ViewModifier{
             .foregroundColor(color)
     }
 }
+struct SignMod:ViewModifier{
+    
+    @State var color:Color = Color("Gray")
+    
+    func body(content: Content) -> some View{
+        content
+            .frame(width:.infinity, height: 45)
+            .foregroundColor(color)
+    }
+}
