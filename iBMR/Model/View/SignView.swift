@@ -5,7 +5,7 @@
 //  Created by kai wen chen on 2021/11/16.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct SignView: View {
     
@@ -74,3 +74,5 @@ struct SignView_Previews: PreviewProvider {
         SignView()
     }
 }
+ 
+*/

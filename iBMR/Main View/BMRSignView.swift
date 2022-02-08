@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-import SwiftUI
 
-struct SignView2: View {
+struct BMRSignView: View {
     
     @EnvironmentObject var viewModel: AuthenticationViewModel
 
@@ -30,14 +29,14 @@ struct SignView2: View {
             VStack{
                 ZStack{
                     Rectangle()
-                        .frame(width:300, height:80)
+                        .frame(width:400, height:80)
                         .foregroundColor(Color("CentirGreen"))
                 Text("BMR管理系統開發")
                     .modifier(textMod())
                 }
                 Image("lion")
                     .resizable()
-                    .frame(width:200, height: 300)
+                    .frame(width:200, height:300)
         
                 VStack {
                     HStack{
@@ -58,7 +57,7 @@ struct SignView2: View {
                     TextField("輸入密碼", text: $password)
                     }
                     }
-                }
+               }
                     Button {
                         viewModel.authCreate(email: email, password: password){
                             self.showAlert = true
@@ -93,9 +92,9 @@ struct SignView2: View {
         }
     }
 }
-struct SignView2_Previews: PreviewProvider {
+struct BMRSignView_Previews: PreviewProvider {
     static var previews: some View {
-        SignView2()
+        BMRSignView()
     }
 }
 
@@ -106,7 +105,7 @@ struct SignMod:ViewModifier{
     
     func body(content: Content) -> some View{
         content
-            .frame(width:.infinity, height: 50)
+            .frame(width:.infinity, height: 45)
             .foregroundColor(color)
     }
 }

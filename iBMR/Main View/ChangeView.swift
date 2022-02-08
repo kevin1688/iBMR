@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ChangeView: View {
-    
     @State var users = ""
     @State var phonenumber = ""
     @State var email = ""

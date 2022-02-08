@@ -22,7 +22,7 @@ struct Restaurant: View {
                         .foregroundColor(.gray)
                         Text("餐廳推薦")
                                 .font(.largeTitle)
-                    }
+                    }.padding(.top,-80)
                     ScrollView{
                         ForEach(Menues.shops){ lp in
                                     NavigationLink {
