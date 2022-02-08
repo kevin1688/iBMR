@@ -50,6 +50,7 @@
 		E2DC838A27AE6CBC000482C1 /* MDL link.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC838927AE6CBC000482C1 /* MDL link.swift */; };
 		E2DC838C27AE6FAF000482C1 /* Aboutstore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC838B27AE6FAF000482C1 /* Aboutstore.swift */; };
 		E2DC838E27AE729F000482C1 /* UnderstandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC838D27AE729F000482C1 /* UnderstandView.swift */; };
+		E2DC839027B1F5BD000482C1 /* BMRSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC838F27B1F5BD000482C1 /* BMRSignView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		E2DC838927AE6CBC000482C1 /* MDL link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MDL link.swift"; sourceTree = "<group>"; };
 		E2DC838B27AE6FAF000482C1 /* Aboutstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aboutstore.swift; sourceTree = "<group>"; };
 		E2DC838D27AE729F000482C1 /* UnderstandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderstandView.swift; sourceTree = "<group>"; };
+		E2DC838F27B1F5BD000482C1 /* BMRSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRSignView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E2DC838527AE6B17000482C1 /* peopleMainView.swift */,
+				E2DC838F27B1F5BD000482C1 /* BMRSignView.swift */,
 				DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */,
 				E2DC838727AE6B3C000482C1 /* BMRTabView.swift */,
 			);
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DC837C27AE6543000482C1 /* Evaluation.swift in Sources */,
+				E2DC839027B1F5BD000482C1 /* BMRSignView.swift in Sources */,
 				DA1ADB66279A4A4800D6F931 /* Mod.swift in Sources */,
 				DA1ADB6C279A4A4800D6F931 /* MainView.swift in Sources */,
 				DA1ADB78279A4BA600D6F931 /* AuthenticationViewModel.swift in Sources */,

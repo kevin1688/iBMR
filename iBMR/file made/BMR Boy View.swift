@@ -21,123 +21,123 @@ struct BMR_Boy_View: View {
     
     var body: some View {
         
-        ZStack{
-            
-            Rectangle()
-                .modifier(View_Background())
-            
-            ZStack{
+            ZStack(alignment:.top){
                 
                 Rectangle()
-                    .modifier(Rectangle_Tittle())
-                
-                Text("平均每日攝取熱量計算")
-                    .modifier(Text_Tittle())
-            }
-            .padding(.bottom,700)
-            
-            HStack{
-                
-                VStack(spacing:50){
+                    .modifier(View_Background())
+                VStack(alignment: .center, spacing:45){
+                ZStack{
+                    Rectangle()
+                        .modifier(Rectangle_Tittle())
                     
-                    Text("輸入您的身高:")
-                        .modifier(Small_Tittle())
-                    
-                    Text("輸入您的體重:")
-                        .modifier(Small_Tittle())
-                    
-                    Text("輸入您的年齡:")
-                        .modifier(Small_Tittle())
+                    Text("平均每日攝取熱量計算")
+                        .modifier(Text_Tittle())
                 }
+                //.padding(.bottom,700)
                 
-                Spacer()
-                    .frame(width:50, height: 190)
-                
-                VStack(spacing:50){
-                    
-                    ZStack{
+                    VStack(spacing:65){
+                        
+                        HStack(spacing: 40){
+                        Text("輸入您的身高:")
+                                .font(.system(size: 26))
+                            
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 156, height:60 )
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            TextField("請輸入體重", text: $height)
+                                .modifier(TextField_Mod())
+                                               }
+                                }
+                        
+                        HStack(spacing: 40){
+                        Text("輸入您的體重:")
+                                .font(.system(size: 26))
+                            
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 156, height:60 )
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            TextField("請輸入體重", text: $height)
+                                .modifier(TextField_Mod())
+                                               }
+                        }
+                        HStack(spacing: 40){
+                        Text("輸入您的年齡:")
+                                .font(.system(size: 26))
+                            
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 156, height:60 )
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            TextField("請輸入體重", text: $height)
+                                .modifier(TextField_Mod())
+                                               }
+                        }
+                         
+                        Button {
+                            
+                            anser  = cacu.BMR_Girl(weight:Float(weight)!,height:Float(height)!,age:Float(age)!)
+                            
+                        } label: {
+                            
+                        ZStack{
+                            
                         Rectangle()
-                            .frame(width: 130, height:50 )
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    TextField("請輸入體重", text: $weight)
-                        .modifier(TextField_Mod())
-                    }
-                    ZStack{
+                                .frame(width: 370, height: 60)
+                                .background(Color(.white))
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                            
+                        Text("完成")
+                            .font(.system(size: 25))
+                            //.scaleEffect(1.4)
+                            .foregroundColor(.black)
+                            .frame(width: 3000, height: 40)
+                            
+                        }
+                        }
+                        ZStack{
+                            
                         Rectangle()
-                            .frame(width: 130, height:50 )
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    TextField("請輸入體重", text: $height)
-                        .modifier(TextField_Mod())
-                    }
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 130, height:50 )
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    TextField("請輸入體重", text:  $age)
-                        .modifier(TextField_Mod())
-                    }
+                                .frame(width: 370, height: 60)
+                                .background(Color(.white))
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                            
+                        Text("您的BMR值:\(Int(anser))")
+                                .font(.system(size: 25))
+                           // .scaleEffect(1.4)
+                            .foregroundColor(.black)
+                            //.frame(width: 300, height: 40)
+                        }
+                    //Spacer()
+                       // .frame(width:50, height: 190)
                 }
-            }
-            .scaleEffect(1.2)
-            .padding(.bottom,200)
-            .padding(.leading,12)
-            
-            HStack{
+                }
+               // .scaleEffect(1.2)
+               // .padding(.bottom,200)
+               // .padding(.leading,12)
                 
-            Button {
                 
-                anser  = cacu.BMR_Boy(weight:Float(weight)!,height:Float(height)!,age:Float(age)!)
+                    
                 
-            } label: {
+                //.scaleEffect(1.2)
+                //.padding(.top,300)
                 
-            ZStack{
                 
-            Rectangle()
-                    .frame(width: 300, height: 50)
-                    .background(Color(.white))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                
-            Text("完成")
-                .scaleEffect(1.4)
-                .foregroundColor(.black)
-                .frame(width: 180, height: 40)
+                //.scaleEffect(1.2)
+                //.padding(.top,550)
                 
             }
-            }
-                
-            }
-            .scaleEffect(1.2)
-            .padding(.top,300)
-            
-            ZStack{
-                
-            Rectangle()
-                    .frame(width: 300, height: 50)
-                    .background(Color(.white))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                
-            Text("您的BMR值:\(Int(anser))")
-                .scaleEffect(1.4)
-                .foregroundColor(.black)
-                .frame(width: 300, height: 40)
-            }
-            .scaleEffect(1.2)
-            .padding(.top,550)
-            
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
         }
-    }
 }
 
-struct BMR_Boy_View_Previews: PreviewProvider {
+struct BMR_Boy_View_Previewss: PreviewProvider {
     static var previews: some View {
-        BMR_Boy_View()
+        BMR_Girl_View()
     }
 }

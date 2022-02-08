@@ -47,6 +47,16 @@ struct Small_Tittle:ViewModifier{
             .frame(width: 120, height: 50)
     }
 }
+
+struct Small_Tittle_k:ViewModifier{
+    
+    func body(content:Content) -> some View{
+        
+        content
+            .frame(height: 50)
+    }
+}
+
 struct TextField_Mod:ViewModifier{
     
     func body(content:Content) -> some View{

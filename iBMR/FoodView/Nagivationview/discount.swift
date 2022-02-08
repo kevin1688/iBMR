@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct discount: View {    
+struct discount: View {
+    @State var Menushop = shop(title: "", img: "", Sortnames: [Sortname(sortname: "", products: [product(productname:"", cal: "", productprice: "")])], combos: [combo(comboname: "", price: "", price2: "", other: "")], works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
     var body: some View {
         
             ZStack{
                 Rectangle()
-                    .frame(width: 420, height: 860, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .ignoresSafeArea()
                     .foregroundColor(Color("Green"))
                 Spacer()
                 Spacer()
@@ -34,53 +35,34 @@ struct discount: View {
                         .font(.title)
                 }
                     ScrollView{
-                        ForEach(FoodNames2){ item in
-                            Foods2(name: item.name, price: item.price,price2: item.price2,other: item.other,img: item.img)
-                            
+                        ForEach(Menushop.combos){ item in
+                            Foods2(name1: item.comboname, price: item.price,price2: item.price2,other: item.other,img2: item.comboimg)
                         }
                     }
                 }
             }
         }
-    }
-    
-
 struct discount_Previews: PreviewProvider {
     static var previews: some View {
         discount()
     }
 }
-struct FoodName2 : Identifiable,Codable{
-    
-    var id = UUID()
-    var name:String
-    var price :String
-    var price2 : String
-    var other : String
-    var img = ""
-}
-  var FoodNames2 :[FoodName2] = [
-        FoodName2(name:"雙蝦天婦羅堡",price:"單點：144",price2:"199",other:"",img:"15"),
-        FoodName2(name:"炸蝦安格斯黑牛堡",price:"單點：144",price2:"199",other:"",img:"16"),
-        FoodName2(name:"現烤貝果",price:"單點：55",price2:"65",other:"（搭配38元指定飲料）",img:"17"),
-        FoodName2(name:"有氧雙人早餐",price:"",price2:"平均75折",other:"內含兩份主餐、大薯、6塊麥克雞與兩杯38元飲料",img:"18")
-    ]
 
 struct Foods2 : View{
     
-    @State var name : String
+    @State var name1 : String
     @State var price : String
     @State var price2 : String
     @State var other : String
-    @State var img = ""
+    @State var img2 = ""
     
     var body: some View{
         HStack{
-            Image("\(img)")
+            Image("\(img2)")
                 .resizable()
                 .frame(width: 200, height: 200)
             VStack{
-            Text("[\(name)]")
+            Text("[\(name1)]")
                 .font(.title)
             Text("\(price)")
                 .font(.title)
@@ -91,4 +73,5 @@ struct Foods2 : View{
             }
         }
     }
+}
 }

@@ -30,7 +30,7 @@ struct UnderstandView: View {
                 } label: {
                     ZStack{
                     Rectangle()
-                        .frame(width: 350, height: 55)
+                        .frame(width: 350, height: 65)
                         .foregroundColor(Color("Gray"))
                         HStack{
                     Text("了解BMI")
@@ -48,7 +48,7 @@ struct UnderstandView: View {
                 } label: {
                     ZStack{
                     Rectangle()
-                        .frame(width: 350, height: 55)
+                        .frame(width: 350, height: 65)
                         .foregroundColor(Color("Gray"))
                         HStack{
                         Text("了解熱量")
@@ -66,7 +66,7 @@ struct UnderstandView: View {
                 } label: {
                     ZStack{
                     Rectangle()
-                        .frame(width: 350, height: 55)
+                        .frame(width: 350, height: 65)
                         .foregroundColor(Color("Gray"))
                         HStack{
                         Text("網路上的減肥方式")

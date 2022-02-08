@@ -22,142 +22,133 @@ struct TDEE_View: View {
     var body: some View {
         
         
-        ZStack{
-            
+        ZStack(alignment:.top) {
             Rectangle()
                 .modifier(View_Background())
-            
-            ZStack{
-                
-                Rectangle()
-                    .modifier(Rectangle_Tittle())
-                
-                Text("TDEE計算")
-                    .modifier(Text_Tittle())
-            }
-            .padding(.bottom,700)
-            
-            Text("\(String(format: "%.2f",anser))")
-                .font(.system(size: 24, weight: .black, design: .rounded))
-                .frame(width: 200, height: 50, alignment: .center)
-                .background(Color("DarkGreen"))
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .scaleEffect(1.5)
-                .padding(.bottom,470)
-            
-            Text("完成")
-                .frame(width: 200, height: 50, alignment: .center)
-                .background(Color.white)
-                .cornerRadius(10)
-                .scaleEffect(1.5)
-                .padding(.bottom,270)
-                .onTapGesture {
-                    anser = Double(keyNumberString)! * pointNumber
-                    
-                }
-            
-            HStack{
-                Text("輸入您的BMR:")
-                    .modifier(Small_Tittle())
-                
-                Spacer()
-                    .frame(width: 30, height:10)
-                
+            VStack(spacing:20){
                 ZStack{
                     
                     Rectangle()
-                        .modifier(TextField_Mod())
-                        .foregroundColor(.white)
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 130, height:50 )
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    TextField("輸入您的BMR", text: $keyNumberString)
-                        .font(.system(size: 24, weight: .heavy, design: .rounded))
-                        .frame(width: 120, height: 50, alignment: .center)
-                        .keyboardType(.numberPad)
-                        .foregroundColor(.black)
-                      }
+                        .modifier(Rectangle_Tittle())
                     
+                    Text("TDEE計算")
+                        .modifier(Text_Tittle())
                 }
-            }
-            .scaleEffect(1.1)
-            .padding(.bottom,90)
-            .offset(x:10)
-            
-            HStack{
+                //.padding(.bottom,700)
                 
-                Text("選擇您的運動量:")
-                    .scaleEffect(1.8)
-                    .frame(width: 140, height: 60)
+                Text("\(String(format: "%.2f",anser))")
+                    .font(.system(size: 36, weight: .black, design: .rounded))
+                    .frame(width: 300, height: 75, alignment: .center)
+                    .background(Color("DarkGreen"))
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    //.scaleEffect(1.5)
+                    //.padding(.bottom,470)
                 
-                Spacer()
-                    .frame(width:60, height:10 )
+                Text("完成")
+                    .font(.system(size: 36, weight: .black, design: .rounded))
+                    .frame(width: 300, height: 75, alignment: .center)
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    //.scaleEffect(1.5)
+                    //.padding(.bottom,270)
+                    .onTapGesture {
+                        anser = Double(keyNumberString)! * pointNumber
+                        
+                    }
                 
-                NavigationLink(
-                    
-                    destination: Comment_View(),
-                    
-                    label: {
+                
+                
+                VStack(alignment:.leading,spacing:20) {
+                    HStack(spacing:11){
+                        Text("輸入您的BMR:")
+                           // .modifier(Small_Tittle_k())
+                            .font(.system(size: 32, weight: .black, design: .rounded))
                         
                         ZStack{
                             
-                            Circle()
-                                .frame(width: 40, height: 40)
+                            Rectangle()
+                                .modifier(TextField_Mod())
                                 .foregroundColor(.white)
-                            Text("?")
-                                .font(.largeTitle)
+                            ZStack{
+                                Rectangle()
+                                    .frame(width: 130, height:50 )
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            TextField("輸入您的BMR", text: $keyNumberString)
+                                .font(.system(size: 24, weight: .black, design: .rounded))
+                                .frame(width: 120, height: 50, alignment: .center)
+                                .keyboardType(.numberPad)
                                 .foregroundColor(.black)
-                                .frame(width: 40, height: 40)
+                              }
                             
                         }
                     }
-                )
-            }
-            .scaleEffect(1.1)
-            .offset(x:20)
-            .padding(.top,50)
-            
-            HStack{
+                    HStack(spacing:20){
+                        
+                        Text("選擇您的運動量:")
+                            //.scaleEffect(1.8)
+                            .font(.system(size: 32, weight: .black, design: .rounded))
+                            .frame(height: 60)
+                        
+                        NavigationLink(
+                            
+                            destination: Comment_View(),
+                            
+                            label: {
+                                
+                                ZStack{
+                                    
+                                    Circle()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(.white)
+                                    Text("?")
+                                        .font(.largeTitle)
+                                        .foregroundColor(.black)
+                                        .frame(width: 40, height: 40)
+                                    
+                                }
+                            }
+                        )
+                    }
+                }
+                //.scaleEffect(1.1)
+                //.padding(.bottom,90)
+                //.offset(x:10)
                 
-                VStack{
+                
+                //.scaleEffect(1.1)
+                //.offset(x:20)
+                //.padding(.top,50)
+                
+                HStack{
                     
-                    ZStack{
-                         
+                    VStack{
+                        
                         KeyNumberA(setNumber: 1.2, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
                             .cornerRadius(10)
-                    }
-                    
-                    ZStack{
                         
                         KeyNumberC(setNumber: 1.55, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
                             .cornerRadius(10)
                     }
-                }
-                
-                VStack{
-                    ZStack{
-                        
+                    
+                    VStack{
                         KeyNumberB(setNumber: 1.375, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
                             .cornerRadius(10)
-                    }
-                    
-                    ZStack{
                         
                         KeyNumberD(setNumber:1.725, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
                             .cornerRadius(10)
                     }
                 }
+                .padding(50)
+                //.scaleEffect(1.4)
+                //.padding(.top,420)
+                
+                //Rectangle()
+                    //.frame(width: 450, height: 100)
+                    //.padding(.top,850)
+                
             }
-            .scaleEffect(1.4)
-            .padding(.top,420)
-            
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
-            
         }
     }
 }
@@ -180,15 +171,19 @@ struct KeyNumberA: View {
     
     var body: some View {
         
-        Text("無\(Int(setNumber)).2")
-            .fontWeight(.bold)
-            .frame(width: 100, height: 100, alignment: .center)
-            .background(color)
-            .foregroundColor(.white)
-            .onTapGesture {
-                keyNumber = setNumber
-                keyNumberSting = String(keyNumber)
+        ZStack {
+            Rectangle()
+                .foregroundColor(color)
+            Text("無")
+                .font(.system(size: 36, weight: .bold, design: .rounded))
+                //.frame(width: 100, height: 100, alignment: .center)
+                //.background(color)
+                .foregroundColor(.white)
+                .onTapGesture {
+                    keyNumber = setNumber
+                    keyNumberSting = String(keyNumber)
             }
+        }
     }
 }
 
@@ -204,15 +199,20 @@ struct KeyNumberB: View {
     
     var body: some View {
         
-        Text("輕量\(Int(setNumber)).375")
-            .fontWeight(.bold)
-            .frame(width: 100, height: 100, alignment: .center)
-            .background(color)
-            .foregroundColor(.white)
-            .onTapGesture {
-                keyNumber = setNumber
-                keyNumberSting = String(keyNumber)
+        ZStack {
+            
+            Rectangle()
+                .foregroundColor(color)
+            Text("輕量")
+                .font(.system(size: 36, weight: .bold, design: .rounded))
+                //.frame(width: 100, height: 100, alignment: .center)
+                //.background(color)
+                .foregroundColor(.white)
+                .onTapGesture {
+                    keyNumber = setNumber
+                    keyNumberSting = String(keyNumber)
             }
+        }
     }
 }
 
@@ -228,15 +228,20 @@ struct KeyNumberC: View {
     
     var body: some View {
         
-        Text("中度\(Int(setNumber)).55")
-            .fontWeight(.bold)
-            .frame(width: 100, height: 100, alignment: .center)
-            .background(color)
-            .foregroundColor(.white)
-            .onTapGesture {
-                keyNumber = setNumber
-                keyNumberSting = String(keyNumber)
+        ZStack {
+            
+            Rectangle()
+                .foregroundColor(color)
+            Text("中度")
+                .font(.system(size: 36, weight: .bold, design: .rounded))
+                //.frame(width: 100, height: 100, alignment: .center)
+                //.background(color)
+                .foregroundColor(.white)
+                .onTapGesture {
+                    keyNumber = setNumber
+                    keyNumberSting = String(keyNumber)
             }
+        }
     }
 }
 
@@ -252,14 +257,20 @@ struct KeyNumberD: View {
     
     var body: some View {
         
-        Text("高度\(Int(setNumber)).725")
-            .fontWeight(.bold)
-            .frame(width: 100, height: 100, alignment: .center)
-            .background(color)
-            .foregroundColor(.white)
-            .onTapGesture {
-                keyNumber = setNumber
-                keyNumberSting = String(keyNumber)
+        ZStack {
+            
+            Rectangle()
+                .foregroundColor(color)
+            Text("高度")
+                //.fontWeight(.bold)
+                //.frame(width: 100, height: 100, alignment: .center)
+                //.background(color)
+                .font(.system(size: 36, weight: .bold, design: .rounded))
+                .foregroundColor(.white)
+                .onTapGesture {
+                    keyNumber = setNumber
+                    keyNumberSting = String(keyNumber)
             }
+        }
     }
 }

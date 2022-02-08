@@ -35,7 +35,7 @@ struct MDL_link: View {
                         }
                     }
                     NavigationLink {
-                        MenuView( Menushop: mshop)
+                       discount( Menushop: mshop)
                     } label: {
                         ZStack{
                             Rectangle()
