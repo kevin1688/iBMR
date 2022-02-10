@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct discount: View {
+    @State var title = ""
     @State var Menushop = shop(title: "", img: "", Sortnames: [Sortname(sortname: "", products: [product(productname:"", cal: Int(), productprice: "")])], combos: [combo(comboname: "", price: "", price2: "", other: "")], works: [work(phone: "", address: "", Mon: "", Tue: "", Wed: "", Thu: "", Fri: "", Sat: "", Sun: "", x: "", y: "")])
     var body: some View {
-        
             ZStack{
                 Rectangle()
                     .ignoresSafeArea()
@@ -20,18 +20,16 @@ struct discount: View {
                 VStack{
                     ZStack{
                 Rectangle()
-                    .frame(width: 400, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color("Gray"))
+                .modifier(MainRectangleTitleMod())
                 Text("優惠活動")
-                    .foregroundColor(.black)
-                    .font(.largeTitle)
+                .modifier(MainTitleMod())
                     }
                 ZStack{
                 Rectangle()
                     .frame(width: 280, height: 43, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .foregroundColor(Color("DarkGreen"))
                     .cornerRadius(40)
-                    Text("麥當勞")
+                    Text("\(Menushop.title)")
                         .font(.title)
                 }
                     ScrollView{
@@ -62,7 +60,7 @@ struct Foods2 : View{
                 .resizable()
                 .frame(width: 200, height: 200)
             VStack{
-            Text("[\(name1)]")
+            Text("\(name1)")
                 .font(.title)
             Text("\(price)")
                 .font(.title)

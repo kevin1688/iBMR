@@ -16,13 +16,21 @@ struct Restaurant: View {
                         .ignoresSafeArea()
                     .foregroundColor(Color("Main Color"))
                 VStack {
+                    Button("取得資料"){
+                        Menues.get()
+                    }
+                    
+                   /* Button("新增多筆商店資料") {
+                        Menues.addAll(shops: [
+                            shop(title: <#T##String#>, Sortnames: <#T##[Sortname]#>, combos: <#T##[combo]#>, works: <#T##[work]#>)
+                        ])
+                    }.padding(.bottom,100)*/
                     ZStack{
                     Rectangle()
-                        .frame(width:.infinity, height: 80)
-                        .foregroundColor(.gray)
-                        Text("餐廳推薦")
-                                .font(.largeTitle)
-                    }.padding(.top,-80)
+                    .modifier(MainRectangleTitleMod())
+                    Text("餐廳推薦")
+                    .modifier(MainTitleMod())
+                    }//.padding(.top,-80)
                     ScrollView{
                         ForEach(Menues.shops){ lp in
                                     NavigationLink {
@@ -68,3 +76,24 @@ struct shops : View{
     }
 }
 
+struct MainRectangleTitleMod:ViewModifier{
+    
+    @State var color:Color = Color.black
+    
+    func body(content: Content) -> some View{
+        content
+            .frame(width:.infinity , height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color("Gray"))
+    }
+}
+
+struct MainTitleMod:ViewModifier{
+    
+    @State var color:Color = Color.black
+    
+    func body(content: Content) -> some View{
+        content
+            .foregroundColor(.black)
+            .font(.largeTitle)
+    }
+}

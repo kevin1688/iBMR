@@ -116,9 +116,7 @@ struct CaloriesView: View {
             }
             .offset(y: OnOff ? 0:800)
             .padding(.top,300)
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
+           
         }
     }
 }

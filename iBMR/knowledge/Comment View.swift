@@ -55,9 +55,7 @@ struct Comment_View: View {
             }
             .scaleEffect(0.85)
             
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
+            
         }
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FoodMainView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     var body: some View {
         NavigationView{
             ZStack{
@@ -24,7 +25,11 @@ struct FoodMainView: View {
                         .frame(width:.infinity, height:1, alignment: .top)
                     Spacer()
                     NavigationLink {
-                        ChangeView()
+                        switch viewModel.state{
+                            case .signedIn : ChangeView()
+                            case .signedOut : BMRSignView()
+                        }
+                       
                     } label: {
                         ZStack{
                             Rectangle()

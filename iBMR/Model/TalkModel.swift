@@ -20,7 +20,7 @@ struct talk: Identifiable,Hashable,Codable{
 }
 
 class TalkData: ObservableObject {
-    let path: String = "Talk"
+    let path: String = "iBMR"
     
     private let store = Firestore.firestore()
     

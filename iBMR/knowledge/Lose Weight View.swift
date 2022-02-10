@@ -113,6 +113,7 @@ struct Lose_Weight_View: View {
                             Text("粉，但不能被人體分解成葡")
                             Text("萄糖，然後被吸收到血液當")
                             Text("中，作為人體的能量來源")
+                            
                         }
                         .scaleEffect(1.2)
                         .foregroundColor(.black)
@@ -141,9 +142,7 @@ struct Lose_Weight_View: View {
             .padding(.top,70)
             .offset(y: OnOff ? 0:800)
             
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
+            
         }
     }
 }

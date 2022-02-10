@@ -18,18 +18,16 @@ struct Aboutstore: View {
             VStack{
                 ZStack{
                     Rectangle()
-                        .frame(width: 400, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Color("Gray"))
+                        .modifier(MainRectangleTitleMod())
                     Text("相關資料")
-                        .foregroundColor(.black)
-                        .font(.largeTitle)
+                        .modifier(MainTitleMod())
                 }
                 ZStack{
                     Rectangle()
                         .frame(width: 400, height: 43, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .foregroundColor(Color("DarkGreen"))
                         .cornerRadius(40)
-                    Text("\(title)") //   資料庫 1
+                    Text("\(WorkShop.title)") //   資料庫 1
                         .foregroundColor(.black)
                         .font(.largeTitle)
                 }
@@ -98,6 +96,8 @@ struct workshop : View{
         }
     }
 }
+
+
 
 
 

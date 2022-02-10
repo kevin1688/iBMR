@@ -84,9 +84,7 @@ struct BMIView: View {
                 }
             }.offset(y: OnOff ? 0:800)
             
-            Rectangle()
-                .frame(width: 450, height: 100)
-                .padding(.top,850)
+           
         }
     }
 }

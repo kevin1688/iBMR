@@ -21,7 +21,9 @@ struct BMRSignView: View {
     @State var showAlert = false
     
     var body: some View {
+        
         ZStack {
+            
            Rectangle()
                 .ignoresSafeArea()
                 .foregroundColor(Color("Main Color"))
@@ -29,7 +31,7 @@ struct BMRSignView: View {
             VStack{
                 ZStack{
                     Rectangle()
-                        .frame(width:400, height:80)
+                        .frame(width:.infinity, height:80)
                         .foregroundColor(Color("CentirGreen"))
                 Text("BMR管理系統開發")
                     .modifier(textMod())
@@ -67,7 +69,7 @@ struct BMRSignView: View {
                 }
                 
                 Button {
-                    viewModel.authSignIn(email: "jackexi@gmail.com", password: "123456")
+                    viewModel.authSignIn(email: email, password: password)
                 } label: {
                     Text("登入帳號")
                 }

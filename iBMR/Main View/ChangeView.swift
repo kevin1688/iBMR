@@ -17,17 +17,17 @@ struct ChangeView: View {
                 .ignoresSafeArea()
                 .foregroundColor(Color("Main Color"))
             VStack{
-                Text("輸入個人資料")
+                Text("個人資料")
                     .modifier(textMod())
                 Image("8")
                     .resizable()
                     .frame(width: 300, height: 300)
                     .cornerRadius(150)
-                Text("更換大頭貼照")
+                Text("大頭貼照")
                     .font(.title)
                     .padding()
                 HStack{
-                    Text("     用戶名")
+                    Text("       用戶名")
                         .font(.title)
                     
                     ZStack {

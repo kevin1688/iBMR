@@ -18,14 +18,14 @@ struct allJudge: View {
             Rectangle()
                 .foregroundColor(Color("Green"))
                 .ignoresSafeArea()
+        
             VStack {
+                ZStack{
+                    Rectangle()
+                        .modifier(MainRectangleTitleMod())
                 Text("評價總和")
-                    .scaleEffect(2)
-                    .frame(width: 350, height: 60, alignment: .center)
-                    .foregroundColor(.black)
-                    .background(Color("Gray"))
-                    .cornerRadius(18)
-                    .padding(.vertical,20)
+                        .modifier(MainTitleMod())
+                }
                 ScrollView {
                     ForEach(DataJG) { allJG in
                         HStack {               Text("\(allJG.JG.title)")
@@ -44,6 +44,7 @@ struct allJudge: View {
                                 .cornerRadius(16)
                         }
                         }
+                
                     }
                 }
             }

@@ -16,6 +16,7 @@ class AuthenticationViewModel: NSObject, ObservableObject {
         case signedIn
         case signedOut
     }
+    
     let auth = Auth.auth()
     
     @Published var state: SignInState = .signedOut
@@ -52,7 +53,10 @@ class AuthenticationViewModel: NSObject, ObservableObject {
         auth.signIn(withEmail: email, password: password) { [weak self] authResult, error in
           guard let strongSelf = self else { return }
           // ...
-            self!.state = .signedIn
+            guard let result = authResult, error == nil else{
+                return
+            }
+                    self!.state = .signedIn
         }
     }
     
