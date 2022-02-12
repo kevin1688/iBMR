@@ -93,7 +93,7 @@ class Foods:ObservableObject{
     
     func listenData(){ //監聽資料變化
         
-        store.collection(path).order(by: "date").addSnapshotListener { (querySnapshot, error) in
+        store.collection(path).order(by:"title").addSnapshotListener { (querySnapshot, error) in
             guard let querySnapshot = querySnapshot else {
                 return
             }

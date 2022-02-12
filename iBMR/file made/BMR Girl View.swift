@@ -60,7 +60,7 @@ struct BMR_Girl_View: View {
                                     .frame(width: 156, height:60 )
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
-                            TextField("請輸入體重", text: $height)
+                            TextField("請輸入體重", text: $weight)
                                 .modifier(TextField_Mod())
                                                }
                         }
@@ -73,7 +73,7 @@ struct BMR_Girl_View: View {
                                     .frame(width: 156, height:60 )
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
-                            TextField("請輸入體重", text: $height)
+                            TextField("請輸入體重", text: $age)
                                 .modifier(TextField_Mod())
                                                }
                         }

@@ -15,22 +15,28 @@ struct FoodMainView: View {
                 Rectangle()
                     .ignoresSafeArea()
                     .foregroundColor(Color("Main Color"))
-                
-                VStack{
+                VStack(spacing:40){
+                   
                     Image("7")
                         .resizable()
                         .frame(width:.infinity
                                , height:200, alignment: .top)
                     Rectangle()
                         .frame(width:.infinity, height:1, alignment: .top)
-                    Spacer()
+                    NavigationLink {
+                        updateView()
+                    } label: {
+                    Rectangle()
+                            .frame(width: 150, height:50, alignment: .leading)
+                            .cornerRadius(18)
+                            .foregroundColor(Color("Gray"))
+                    }
                     NavigationLink {
                         switch viewModel.state{
                             case .signedIn : ChangeView()
                             case .signedOut : BMRSignView()
                         }
-                       
-                    } label: {
+                        }label: {
                         ZStack{
                             Rectangle()
                                 .modifier(PpMod())
@@ -38,7 +44,6 @@ struct FoodMainView: View {
                                 .modifier(ReMod())
                         }
                     }
-                    Spacer()
                     NavigationLink {
                         Sex()
                     } label: {
@@ -49,7 +54,7 @@ struct FoodMainView: View {
                                 .modifier(ReMod())
                         }
                     }
-                    Spacer()
+                   
                     NavigationLink {
                         TDEE_View()
                     } label: {
@@ -60,8 +65,8 @@ struct FoodMainView: View {
                                 .modifier(ReMod())
                         }
                     }
-                    Spacer()
-                }
+                  
+                }.padding(.bottom,40)
             }
         }.edgesIgnoringSafeArea(.all)
     }
@@ -136,4 +141,3 @@ struct PpMod:ViewModifier{
             .foregroundColor(color)
     }
 }
-

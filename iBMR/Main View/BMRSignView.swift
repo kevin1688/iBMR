@@ -36,9 +36,9 @@ struct BMRSignView: View {
                 Text("BMR管理系統開發")
                     .modifier(textMod())
                 }
-                Image("lion")
+                Image("MainLogo")
                     .resizable()
-                    .frame(width:200, height:300)
+                    .frame(width:400, height:400)
         
                 VStack {
                     HStack{

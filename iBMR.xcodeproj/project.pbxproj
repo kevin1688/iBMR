@@ -52,6 +52,8 @@
 		DA4B48DA27B4F9BC00D330F5 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D527B4F9BC00D330F5 /* BMIView.swift */; };
 		DA4B48DB27B4F9BC00D330F5 /* Lose Weight View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D627B4F9BC00D330F5 /* Lose Weight View.swift */; };
 		DA5AE27B27A95859004BA8EB /* Aboutstore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE27A27A95859004BA8EB /* Aboutstore.swift */; };
+		DAAF4F4F27B7526800B368AE /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF4F4E27B7526800B368AE /* NewView.swift */; };
+		DAEF024C27B6A612008DC3F4 /* update View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF024B27B6A611008DC3F4 /* update View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		DA4B48D527B4F9BC00D330F5 /* BMIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
 		DA4B48D627B4F9BC00D330F5 /* Lose Weight View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lose Weight View.swift"; sourceTree = "<group>"; };
 		DA5AE27A27A95859004BA8EB /* Aboutstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aboutstore.swift; sourceTree = "<group>"; };
+		DAAF4F4E27B7526800B368AE /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		DAEF024B27B6A611008DC3F4 /* update View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "update View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1ADB45279A4A3400D6F931 /* food.swift */,
+				DAEF024B27B6A611008DC3F4 /* update View.swift */,
 				DA1ADB46279A4A3400D6F931 /* Restaurant.swift */,
 				DA12AC2C279A500700D22AF6 /* ResturantView */,
 			);
@@ -246,6 +251,7 @@
 				DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */,
 				DA1ADB5F279A4A4800D6F931 /* BMRSignView.swift */,
 				DA1ADB62279A4A4800D6F931 /* BMRTabView.swift */,
+				DAAF4F4E27B7526800B368AE /* NewView.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				DA1ADB24279A454000D6F931 /* AppDelegate.swift in Sources */,
 				DA1ADB6F279A4A4800D6F931 /* ChangeView.swift in Sources */,
 				DA4B48C027B4F95500D330F5 /* Sex.swift in Sources */,
+				DAEF024C27B6A612008DC3F4 /* update View.swift in Sources */,
 				DA1ADB6A279A4A4800D6F931 /* SignView.swift in Sources */,
 				DA1ADB28279A454C00D6F931 /* DataModel.swift in Sources */,
 				DA4B48DA27B4F9BC00D330F5 /* BMIView.swift in Sources */,
@@ -417,6 +424,7 @@
 				DA1ADB67279A4A4800D6F931 /* TalkMsg.swift in Sources */,
 				DA4B48D927B4F9BC00D330F5 /* UnderstandView.swift in Sources */,
 				DA1ADB76279A4A4800D6F931 /* BMRTabView.swift in Sources */,
+				DAAF4F4F27B7526800B368AE /* NewView.swift in Sources */,
 				66B5AFB727911D0000D9ADE0 /* iBMRApp.swift in Sources */,
 				DA1ADB26279A454600D6F931 /* ContentView.swift in Sources */,
 				DA1ADB3A279A498700D6F931 /* discount.swift in Sources */,
