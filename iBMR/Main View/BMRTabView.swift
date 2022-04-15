@@ -8,31 +8,29 @@ import SwiftUI
 
 struct BMRTabView: View {
     enum selectionName {
-    case MainView
-    case Restaurant
-    case MainView2
+        case PeopleMainView
+        case Restaurant
+        case KnowledgeView
     }
-    
     @State var selectionid = selectionName.Restaurant
-    
     var body: some View {
         TabView(selection:$selectionid){
-           FoodMainView()
+            PeopleMainView()
                 .tabItem{Image(systemName:"person")}
-                .tag(selectionName.MainView)
-           Restaurant()
+                .tag(selectionName.PeopleMainView)
+            Restaurant()
                 .tabItem{Image(systemName:"star")}
                 .tag(selectionName.Restaurant)
-
-            UnderstandView()
+            
+            KnowledgeView()
                 .tabItem{Image(systemName:"books.vertical.fill")}
-                .tag(selectionName.MainView2)
+                .tag(selectionName.KnowledgeView)
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear{
             selectionid = .Restaurant
         }
-}
+    }
 }
 struct BMRTabView_Previews: PreviewProvider {
     static var previews: some View {

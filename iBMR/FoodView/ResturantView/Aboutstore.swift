@@ -24,7 +24,7 @@ struct Aboutstore: View {
                 }
                 ZStack{
                     Rectangle()
-                        .frame(width: 400, height: 43, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 400, height: 43, alignment: .center)
                         .foregroundColor(Color("DarkGreen"))
                         .cornerRadius(40)
                     Text("\(WorkShop.title)") //   資料庫 1

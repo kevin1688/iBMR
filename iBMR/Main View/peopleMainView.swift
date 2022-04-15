@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct FoodMainView: View {
-    @EnvironmentObject var viewModel: AuthenticationViewModel
+struct PeopleMainView: View {
     var body: some View {
         NavigationView{
             ZStack{
@@ -16,7 +15,6 @@ struct FoodMainView: View {
                     .ignoresSafeArea()
                     .foregroundColor(Color("Main Color"))
                 VStack(spacing:40){
-                   
                     Image("7")
                         .resizable()
                         .frame(width:.infinity
@@ -32,11 +30,8 @@ struct FoodMainView: View {
                             .foregroundColor(Color("Gray"))
                     }
                     NavigationLink {
-                        switch viewModel.state{
-                            case .signedIn : ChangeView()
-                            case .signedOut : BMRSignView()
-                        }
-                        }label: {
+                        ChangeView()
+                    } label: {
                         ZStack{
                             Rectangle()
                                 .modifier(PpMod())
@@ -54,7 +49,6 @@ struct FoodMainView: View {
                                 .modifier(ReMod())
                         }
                     }
-                   
                     NavigationLink {
                         TDEE_View()
                     } label: {
@@ -71,62 +65,9 @@ struct FoodMainView: View {
         }.edgesIgnoringSafeArea(.all)
     }
 }
-
-struct FoodMainView_Previews: PreviewProvider {
+struct PeopleMainView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodMainView()
-    }
-}
-
-
-struct FoodMainView2: View {
-    var body: some View {
-        
-        ZStack{
-            Rectangle()
-                .ignoresSafeArea()
-                .foregroundColor(Color("Main Color"))
-            VStack{
-                Rectangle()
-                    .frame(width:.infinity, height: 200)
-                    .foregroundColor(.white)
-                Rectangle()
-                    .frame(width:.infinity, height:1)
-                Spacer()
-                ZStack{
-                    Rectangle()
-                        .frame(width:250, height: 80)
-                        .foregroundColor(.gray)
-                        .cornerRadius(36)
-                    Text("個人資料")
-                        .modifier(ReMod())
-                }
-                Spacer()
-                ZStack{
-                    Rectangle()
-                        .frame(width:250, height: 80)
-                        .foregroundColor(.gray)
-                        .cornerRadius(36)
-                    Text("BMI計算")
-                        .modifier(ReMod())
-                }
-                
-                Spacer()
-                ZStack{
-                    Rectangle()
-                        .frame(width:250, height: 80)
-                        .foregroundColor(.gray)
-                        .cornerRadius(36)
-                    Text("每日攝取量計算")
-                        .modifier(ReMod())
-                }
-                Spacer()
-                
-                
-                
-            }
-        }
-        
+        PeopleMainView()
     }
 }
 

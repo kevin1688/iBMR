@@ -35,7 +35,7 @@ struct MenuView: View {
                         Text(pf.sortname)
                         ForEach(pf.products){ lk in
                             HStack{
-                                Text("\(lk.productname)")
+                                Text("\(lk.productname) ")
                                 Text("\(lk.productprice)元")
                                 Text("\(lk.cal)卡")
                             }

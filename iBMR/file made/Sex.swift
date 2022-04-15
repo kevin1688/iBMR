@@ -55,7 +55,6 @@ struct Sex: View {
         }
     }
 }
-
 struct Sex_Previews: PreviewProvider {
     static var previews: some View {
         Sex()

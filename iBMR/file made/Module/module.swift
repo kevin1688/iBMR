@@ -8,63 +8,44 @@
 import SwiftUI
 
 struct View_Background :ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .ignoresSafeArea()
             .foregroundColor(Color("Green"))
-        
     }
 }
-
 struct Rectangle_Tittle:ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .frame(width: 500, height: 60)
             .foregroundColor(Color("Gray"))
     }
 }
-
 struct Text_Tittle:ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .scaleEffect(2)
             .frame(width: 500, height: 60)
     }
 }
-
 struct Small_Tittle:ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .scaleEffect(1.4)
             .frame(width: 120, height: 50)
     }
 }
-
 struct Small_Tittle_k:ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .frame(height: 50)
     }
 }
-
 struct TextField_Mod:ViewModifier{
-    
     func body(content:Content) -> some View{
-        
         content
             .frame(width: 115, height: 50)
             .background(Color(.white))
-        
     }
 }
 

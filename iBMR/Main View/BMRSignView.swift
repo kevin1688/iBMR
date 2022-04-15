@@ -9,25 +9,16 @@ import SwiftUI
 
 
 struct BMRSignView: View {
-    
     @EnvironmentObject var viewModel: AuthenticationViewModel
-
     @AppStorage("tapCount") private var tapCount = 0
-    
     @State var email = ""
-    
     @State var password = ""
-    
     @State var showAlert = false
-    
     var body: some View {
-        
         ZStack {
-            
            Rectangle()
                 .ignoresSafeArea()
                 .foregroundColor(Color("Main Color"))
-            
             VStack{
                 ZStack{
                     Rectangle()
@@ -44,28 +35,28 @@ struct BMRSignView: View {
                     HStack{
                         Text("帳號")
                             .font(.title)
-                    ZStack{
-                        Rectangle()
-                            .modifier(SignMod())
-                    TextField("輸入信箱", text: $email)
-                    }
+                        ZStack{
+                            Rectangle()
+                                .modifier(SignMod())
+                            TextField("輸入信箱", text: $email)
+                        }
                     }
                     HStack{
                         Text("密碼")
                             .font(.title)
-                    ZStack{
-                        Rectangle()
-                            .modifier(SignMod())
-                    TextField("輸入密碼", text: $password)
-                    }
-                    }
-               }
-                    Button {
-                        viewModel.authCreate(email: email, password: password){
-                            self.showAlert = true
+                        ZStack{
+                            Rectangle()
+                                .modifier(SignMod())
+                            TextField("輸入密碼", text: $password)
                         }
-                    } label: {
-                        Text("註冊帳號")
+                    }
+                }
+                Button {
+                    viewModel.authCreate(email: email, password: password){
+                        self.showAlert = true
+                    }
+                } label: {
+                    Text("註冊帳號")
                 }
                 
                 Button {
@@ -73,16 +64,12 @@ struct BMRSignView: View {
                 } label: {
                     Text("登入帳號")
                 }
-                
-                
                 Button {
                     viewModel.signIn()
                 } label: {
                     Text("Google 登入")
                 }
-                
             }
-            
             ZStack {
                 Rectangle()
                 Text("輸入資訊有誤")

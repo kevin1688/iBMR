@@ -12,7 +12,7 @@ struct judge: View {
     @State var onOff = false
     
     @State var stars = 0
-    @State var title = "麥當勞"
+    @State var title = ""
     @State var img = "19"
     @State var tempStars = 0
     

@@ -48,11 +48,13 @@
 		DA4B48C527B4F95500D330F5 /* BMR Boy View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48BF27B4F95500D330F5 /* BMR Boy View.swift */; };
 		DA4B48D727B4F9BC00D330F5 /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D227B4F9BC00D330F5 /* CaloriesView.swift */; };
 		DA4B48D827B4F9BC00D330F5 /* Comment View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D327B4F9BC00D330F5 /* Comment View.swift */; };
-		DA4B48D927B4F9BC00D330F5 /* UnderstandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D427B4F9BC00D330F5 /* UnderstandView.swift */; };
+		DA4B48D927B4F9BC00D330F5 /* knowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D427B4F9BC00D330F5 /* knowledgeView.swift */; };
 		DA4B48DA27B4F9BC00D330F5 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D527B4F9BC00D330F5 /* BMIView.swift */; };
 		DA4B48DB27B4F9BC00D330F5 /* Lose Weight View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B48D627B4F9BC00D330F5 /* Lose Weight View.swift */; };
 		DA5AE27B27A95859004BA8EB /* Aboutstore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE27A27A95859004BA8EB /* Aboutstore.swift */; };
-		DAAF4F4F27B7526800B368AE /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF4F4E27B7526800B368AE /* NewView.swift */; };
+		DA71891927D3C70C00E9C86A /* KnowledgaBMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71891827D3C70C00E9C86A /* KnowledgaBMR.swift */; };
+		DA71891B27D3C84600E9C86A /* KnowledgaTDEE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71891A27D3C84600E9C86A /* KnowledgaTDEE.swift */; };
+		DAAF4F5127B906EE00B368AE /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF4F5027B906EE00B368AE /* NewView.swift */; };
 		DAEF024C27B6A612008DC3F4 /* update View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF024B27B6A611008DC3F4 /* update View.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,11 +103,13 @@
 		DA4B48BF27B4F95500D330F5 /* BMR Boy View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMR Boy View.swift"; sourceTree = "<group>"; };
 		DA4B48D227B4F9BC00D330F5 /* CaloriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		DA4B48D327B4F9BC00D330F5 /* Comment View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comment View.swift"; sourceTree = "<group>"; };
-		DA4B48D427B4F9BC00D330F5 /* UnderstandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderstandView.swift; sourceTree = "<group>"; };
+		DA4B48D427B4F9BC00D330F5 /* knowledgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knowledgeView.swift; sourceTree = "<group>"; };
 		DA4B48D527B4F9BC00D330F5 /* BMIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
 		DA4B48D627B4F9BC00D330F5 /* Lose Weight View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lose Weight View.swift"; sourceTree = "<group>"; };
 		DA5AE27A27A95859004BA8EB /* Aboutstore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aboutstore.swift; sourceTree = "<group>"; };
-		DAAF4F4E27B7526800B368AE /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		DA71891827D3C70C00E9C86A /* KnowledgaBMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgaBMR.swift; sourceTree = "<group>"; };
+		DA71891A27D3C84600E9C86A /* KnowledgaTDEE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgaTDEE.swift; sourceTree = "<group>"; };
+		DAAF4F5027B906EE00B368AE /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
 		DAEF024B27B6A611008DC3F4 /* update View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "update View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +218,7 @@
 				DA1ADB45279A4A3400D6F931 /* food.swift */,
 				DAEF024B27B6A611008DC3F4 /* update View.swift */,
 				DA1ADB46279A4A3400D6F931 /* Restaurant.swift */,
+				DAAF4F5027B906EE00B368AE /* NewView.swift */,
 				DA12AC2C279A500700D22AF6 /* ResturantView */,
 			);
 			path = FoodView;
@@ -251,7 +256,6 @@
 				DA1ADB5B279A4A4800D6F931 /* ChangeView.swift */,
 				DA1ADB5F279A4A4800D6F931 /* BMRSignView.swift */,
 				DA1ADB62279A4A4800D6F931 /* BMRTabView.swift */,
-				DAAF4F4E27B7526800B368AE /* NewView.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
@@ -282,9 +286,11 @@
 			children = (
 				DA4B48D227B4F9BC00D330F5 /* CaloriesView.swift */,
 				DA4B48D327B4F9BC00D330F5 /* Comment View.swift */,
-				DA4B48D427B4F9BC00D330F5 /* UnderstandView.swift */,
+				DA4B48D427B4F9BC00D330F5 /* knowledgeView.swift */,
 				DA4B48D527B4F9BC00D330F5 /* BMIView.swift */,
 				DA4B48D627B4F9BC00D330F5 /* Lose Weight View.swift */,
+				DA71891827D3C70C00E9C86A /* KnowledgaBMR.swift */,
+				DA71891A27D3C84600E9C86A /* KnowledgaTDEE.swift */,
 			);
 			path = knowledge;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1ADB66279A4A4800D6F931 /* Mod.swift in Sources */,
+				DA71891B27D3C84600E9C86A /* KnowledgaTDEE.swift in Sources */,
 				DA1ADB6C279A4A4800D6F931 /* MainView.swift in Sources */,
 				DA1ADB78279A4BA600D6F931 /* AuthenticationViewModel.swift in Sources */,
 				DA1ADB64279A4A4800D6F931 /* TalkView.swift in Sources */,
@@ -421,10 +428,11 @@
 				DA4B48C327B4F95500D330F5 /* BMR formula.swift in Sources */,
 				DA1ADB6E279A4A4800D6F931 /* peopleMainView.swift in Sources */,
 				DA1ADB6B279A4A4800D6F931 /* SwiftUIView.swift in Sources */,
+				DA71891927D3C70C00E9C86A /* KnowledgaBMR.swift in Sources */,
 				DA1ADB67279A4A4800D6F931 /* TalkMsg.swift in Sources */,
-				DA4B48D927B4F9BC00D330F5 /* UnderstandView.swift in Sources */,
+				DA4B48D927B4F9BC00D330F5 /* knowledgeView.swift in Sources */,
 				DA1ADB76279A4A4800D6F931 /* BMRTabView.swift in Sources */,
-				DAAF4F4F27B7526800B368AE /* NewView.swift in Sources */,
+				DAAF4F5127B906EE00B368AE /* NewView.swift in Sources */,
 				66B5AFB727911D0000D9ADE0 /* iBMRApp.swift in Sources */,
 				DA1ADB26279A454600D6F931 /* ContentView.swift in Sources */,
 				DA1ADB3A279A498700D6F931 /* discount.swift in Sources */,

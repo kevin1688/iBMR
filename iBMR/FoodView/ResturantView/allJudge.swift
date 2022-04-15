@@ -10,8 +10,14 @@ import SwiftUI
 struct allJudge: View {
     
     @State var DataJG = [
-        DTJG(JG: JG(title: "麥當勞"), tempStars: 5.0),
-        DTJG(JG: JG(title: "阿寶"), tempStars: 4.5)
+        DTJG(JG: JG(title: "7-11"), tempStars: 5.0),
+        DTJG(JG: JG(title: "弘爺"), tempStars: 2.0),
+        DTJG(JG: JG(title: "肯德基"), tempStars: 3.0),
+        DTJG(JG: JG(title: "胖老爹"), tempStars: 3.0),
+        DTJG(JG: JG(title: "阿寶"), tempStars: 4.0),
+        DTJG(JG: JG(title: "麥味登"), tempStars: 1.0),
+        DTJG(JG: JG(title: "麥當勞"), tempStars: 5.0)
+        
     ]
     var body: some View {
         ZStack {
@@ -28,7 +34,8 @@ struct allJudge: View {
                 }
                 ScrollView {
                     ForEach(DataJG) { allJG in
-                        HStack {               Text("\(allJG.JG.title)")
+                        HStack {
+                            Text("\(allJG.JG.title)")
                                 .scaleEffect(2.5)
                                 .foregroundColor(.black)
                                 .frame(width: 180,height: 50)
@@ -36,7 +43,7 @@ struct allJudge: View {
                             .background(Color("DarkGreen"))
                             .cornerRadius(18)
                             
-                        Text("\(allJG.tempStars)")
+                            Text(" \(allJG.tempStars)")
                                 .scaleEffect(2.5)
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 80, alignment: .center)

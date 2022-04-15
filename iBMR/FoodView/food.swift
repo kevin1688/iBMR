@@ -63,16 +63,18 @@ class Foods:ObservableObject{
                          product(productname: "現烤焙果堡", cal: 244, productprice: "55")
                      ])
                                                              ],
-                          combos:[combo(comboname:"雙蝦天婦羅堡" , price: "單點：144", price2: "199", other: "", comboimg:"15" )],
+                          combos:[combo(comboname:"雙蝦天婦羅堡" , price: "單點：144", price2: "199", other: "", comboimg:"15" ),
+                                  combo(comboname:"雙蝦天婦羅堡",price:"單點：144",price2:"199",other:"",comboimg:"15"),
+                                 combo(comboname:"炸蝦安格斯黑牛堡",price:"單點：144",price2:"199",other:"",comboimg:"16"),
+                                        combo(comboname:"現烤貝果",price:"單點：55",price2:"65",other:"（搭配38元指定飲料）",comboimg:"17"),
+                          combo(comboname:"有氧雙人早餐",price:"",price2:"平均75折",other:"內含兩份主餐、大薯、6塊麥克雞與兩杯38元飲料",comboimg:"18")],
                           works: [work(phone:"04-9291-8438",address:"545南投縣埔里鎮信義路1037號",Mon:"星期一 06:00–00:00" , Tue: "星期二 06:00–00:00", Wed: "星期三 06:00–00:00", Thu: "星期四 06:00–00:00", Fri: "星期五 06:00–00:00", Sat: "星期六 06:00–00:00", Sun: "星期日 06:00–00:00", x: "X:23.971170864497946", y: "Y:120.95674583995995")
                                  ]
                          )
                  ]
              }
           }
-        
     }
-    
     func addAll(shops:[shop]) {//新增整批資料
         shops.forEach { item in
           do {

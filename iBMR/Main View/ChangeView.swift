@@ -29,13 +29,12 @@ struct ChangeView: View {
                 HStack{
                     Text("       用戶名")
                         .font(.title)
-                    
                     ZStack {
                         Rectangle()
                             .modifier(SignMod())
-                    
-                    TextField("輸入用戶名", text: $users)
-                }
+                        
+                        TextField("輸入用戶名", text: $users)
+                    }
                 }
                 HStack{
                     Text(" 電話號碼")
@@ -43,9 +42,8 @@ struct ChangeView: View {
                     ZStack {
                         Rectangle()
                             .modifier(SignMod())
-                    
-                    TextField("輸入電話號碼", text: $phonenumber)
-                }
+                        TextField("輸入電話號碼", text: $phonenumber)
+                    }
                 }
                 HStack{
                     Text("Email信箱")
@@ -53,8 +51,8 @@ struct ChangeView: View {
                     ZStack {
                         Rectangle()
                             .modifier(SignMod())
-                    
-                    TextField("輸入信箱", text: $email)
+                        
+                        TextField("輸入信箱", text: $email)
                     }
                 }
             }

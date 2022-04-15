@@ -8,30 +8,22 @@
 import SwiftUI
 
 struct Comment_View: View {
-    
     var body: some View {
-        
         ZStack{
-            
             Rectangle()
                 .modifier(View_Background())
             
             ZStack{
-                
                 Rectangle()
                     .frame(width: 500, height: 60)
                     .foregroundColor(.gray)
                     .offset(y: -350)
-                
                 Text("平均每日攝取熱量計算")
                     .scaleEffect(2)
                     .frame(width: 500, height: 60)
                     .offset(y: -350)
-                
             }
-            
             ZStack{
-                
                 Rectangle()
                     .frame(width:420, height: 350)
                     .foregroundColor(.white)
@@ -54,8 +46,6 @@ struct Comment_View: View {
                 .scaleEffect(1.55)
             }
             .scaleEffect(0.85)
-            
-            
         }
     }
 }

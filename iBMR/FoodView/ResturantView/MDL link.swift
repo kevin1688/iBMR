@@ -18,7 +18,7 @@ struct MDL_link: View {
             VStack(spacing: 30){
                 HStack(spacing: 30){
                     NavigationLink() {
-                        Evaluation(title:mshop.title, img:mshop.img)
+                        Evaluation(mshop:mshop)
                     } label: {
                         ZStack{
                             Rectangle()
@@ -74,13 +74,6 @@ struct MDL_link: View {
 
                     } 
                     NavigationLink {
-                        /*VStack{
-                            ForEach(mshop.products){ po in
-                                Text(po.name)
-                                Text(po.cal)
-                            }
-                        }
-                         */
                         MenuView( Menushop: mshop)
                     } label: {
                         ZStack{

@@ -19,7 +19,7 @@ struct Restaurant: View {
                     ZStack{
                     Rectangle()
                     .modifier(MainRectangleTitleMod())
-                    Text("餐廳推薦")
+                    Text("店家推薦")
                     .modifier(MainTitleMod())
                     }
                     ScrollView{
@@ -32,24 +32,11 @@ struct Restaurant: View {
                                 }
                     }
                 }
-                
             }
         }.edgesIgnoringSafeArea(.all)
-
     }
-   /* @ViewBuilder func FoodName() -> some View{
-        VStack{
-            ForEach(Menues.ShoppName){ vn in
-                VStack{
-                    Text("\(vn.name)")
-                    Image("\(vn.img)")
-                }
-                
-            }
-        }
-    }*/
-}
-
+} //
+//
 struct Restaurant_Previews: PreviewProvider {
     static var previews: some View {
         Restaurant()
